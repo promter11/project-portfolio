@@ -1,0 +1,59 @@
+@import "../../styles/_variables";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 0 14rem;
+  background: rgba(0, 0, 0, 0.75) url("../../assets/images/Main.jpg") no-repeat
+    center center / cover;
+  background-blend-mode: darken;
+}
+
+.title {
+  max-width: 49rem;
+  margin-bottom: 3rem;
+  font-size: 9.6rem;
+  font-weight: 900;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-shadow: 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.5);
+  color: $white-color;
+}
+
+.desc {
+  margin-bottom: 5rem;
+  font-size: 2.4rem;
+  font-weight: 100;
+  line-height: 150%;
+  color: $lightgrey-text-color;
+}
+
+.link {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 1.5rem 3rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  border: 0.1rem solid $white-color;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  color: $white-color;
+
+  &:hover {
+    box-shadow: inset 7.6rem 0 0 0 $white-color,
+      inset -7.6rem 0 0 0 $white-color;
+    background-color: transparent;
+    color: black;
+  }
+
+  &:active {
+    transition: none;
+    transform: translateY(0.2rem);
+  }
+}

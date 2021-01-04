@@ -1,0 +1,12 @@
+@import "../../styles/_variables";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  height: inherit;
+  padding: 4rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: $sidebar-background-color;
+}

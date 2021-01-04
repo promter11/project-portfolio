@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+}
+
+.icon {
+  display: block;
+}
+
+.link {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
