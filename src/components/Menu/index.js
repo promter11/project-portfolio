@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import styles from "./Menu.module.scss";
 
@@ -7,10 +8,16 @@ const Menu = ({ items }) => {
     <nav className={styles.nav}>
       {items.map(({ id, title, path, icon }, _) => {
         return (
-          <a key={id} className={styles.link} href={path}>
-            <img className={styles.icon} src={icon} alt="Иконка" />
+          <NavLink
+            key={id}
+            className={styles.link}
+            activeClassName={styles.active}
+            to={path}
+            exact
+          >
+            <img className={styles.icon} src={icon} alt="Icon" />
             <span className={styles.text}>{title}</span>
-          </a>
+          </NavLink>
         );
       })}
     </nav>

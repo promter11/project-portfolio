@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./Home.module.scss";
 
@@ -9,9 +10,9 @@ const Home = () => {
       <p className={styles.desc}>
         Front-end developer who loves to work with React.
       </p>
-      <a className={styles.link} href="/about">
+      <Link className={styles.link} to="/about">
         Learn more
-      </a>
+      </Link>
     </section>
   );
 };

@@ -12,9 +12,9 @@ import About from "../../assets/icons/aside/about.svg";
 import Skills from "../../assets/icons/aside/skills.svg";
 import Portfolio from "../../assets/icons/aside/portfolio.svg";
 import Contact from "../../assets/icons/aside/contact.svg";
-import Telegram from "../../assets/icons/aside/telegram.svg";
-import Github from "../../assets/icons/aside/github.svg";
-import Email from "../../assets/icons/aside/email.svg";
+import { ReactComponent as Telegram } from "../../assets/icons/aside/telegram.svg";
+import { ReactComponent as Github } from "../../assets/icons/aside/github.svg";
+import { ReactComponent as Email } from "../../assets/icons/aside/email.svg";
 import Russia from "../../assets/icons/aside/russia.svg";
 import UK from "../../assets/icons/aside/uk.svg";
 import styles from "./Sidebar.module.scss";
@@ -32,9 +32,21 @@ const initialMenuState = [
   { id: 4, title: "Contact", path: "/contact", icon: Contact },
 ];
 const initialSocialState = [
-  { id: 0, path: "https://t.me/darklurkerrr", icon: Telegram },
-  { id: 1, path: "https://github.com/promter11", icon: Github },
-  { id: 2, path: "mailto:promter11@gmail.com", icon: Email },
+  {
+    id: 0,
+    path: "https://t.me/darklurkerrr",
+    component: Telegram,
+  },
+  {
+    id: 1,
+    path: "https://github.com/promter11",
+    component: Github,
+  },
+  {
+    id: 2,
+    path: "mailto:promter11@gmail.com",
+    component: Email,
+  },
 ];
 const initialLanguageState = [
   { id: 0, icon: Russia },

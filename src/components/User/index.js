@@ -5,7 +5,7 @@ import styles from "./User.module.scss";
 const User = ({ name, position, avatar }) => {
   return (
     <div className={styles.user}>
-      <img className={styles.avatar} src={avatar} alt="Аватар пользователя" />
+      <img className={styles.avatar} src={avatar} alt="Avatar" />
       <h3 className={styles.title}>{name}</h3>
       <p className={styles.position}>{position}</p>
     </div>

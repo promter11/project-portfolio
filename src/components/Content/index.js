@@ -1,12 +1,13 @@
 import React from "react";
 
+import Routes from "../../routes";
+
 import styles from "./Content.module.scss";
-import HomePage from "../../pages/HomePage";
 
 const Content = () => {
   return (
     <main className={styles.main}>
-      <HomePage />
+      <Routes />
     </main>
   );
 };

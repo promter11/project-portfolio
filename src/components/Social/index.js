@@ -1,14 +1,14 @@
-import React from "react";
+import React, { createElement } from "react";
 
 import styles from "./Social.module.scss";
 
 const Social = ({ socials }) => {
   return (
     <div className={styles.social}>
-      {socials.map(({ id, path, icon }, _) => {
+      {socials.map(({ id, path, component }, _) => {
         return (
           <a key={id} className={styles.link} href={path}>
-            <img className={styles.icon} src={icon} alt="Иконка" />
+            {createElement(component, { className: styles.icon }, null)}
           </a>
         );
       })}

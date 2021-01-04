@@ -14,9 +14,16 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
-  &:hover {
+  &.active {
     border-left: 0.4rem solid $white-color;
-    background-color: $link-background-color-hover;
+    background-color: $link-background-color-active;
+  }
+
+  &:hover {
+    &:not(.active) {
+      border-left: 0.4rem solid $white-color;
+      background-color: $link-background-color-hover;
+    }
   }
 }
 

@@ -8,7 +8,7 @@ const Language = ({ languages }) => {
       {languages.map(({ id, icon }, _) => {
         return (
           <button key={id} className={styles.button} type="button">
-            <img className={styles.icon} src={icon} alt="Флаг" />
+            <img className={styles.icon} src={icon} alt="Flag" />
           </button>
         );
       })}
