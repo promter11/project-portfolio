@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.about {
+  height: 100%;
+  padding: 8rem 14rem;
+  background: rgba(0, 0, 0, 0.75) url("../../assets/images/About.jpg") no-repeat
+    center center / cover;
+  background-blend-mode: darken;
+}
+
+.title {
+  margin-bottom: 8rem;
+  text-align: right;
+  letter-spacing: 1rem;
+  opacity: 0.25;
+}
+
+.block {
+  position: relative;
+  max-width: 67rem;
+  margin: 0 auto;
+  padding: 6rem 8rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+  background-color: $about-block-color;
+  color: $black-color;
+}
+
+.subtitle,
+.text {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  display: block;
+  font-weight: 900;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+}
+
+.text {
+  font-weight: 100;
+  line-height: 200%;
+  text-align: justify;
+}
+
+.link {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 1.5rem 3rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  border: 0.1rem solid $black-color;
+  transition: all 0.25s ease-in-out;
+  background-color: transparent;
+  color: $black-color;
+
+  &:hover {
+    background-color: $black-color;
+    color: $white-color;
+  }
+
+  &:active {
+    transition: none;
+    transform: translateY(0.2rem);
+  }
+}

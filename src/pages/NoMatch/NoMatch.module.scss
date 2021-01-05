@@ -1,4 +1,4 @@
-@import "../../styles/_variables";
+@import "../../styles/variables";
 
 .noMatch {
   display: flex;
@@ -14,8 +14,9 @@
   margin: 0 auto 2rem auto;
   font-size: 7.8rem;
   font-weight: 900;
-  line-height: 110%;
+  line-height: 125%;
   text-transform: capitalize;
+  color: $black-color;
 }
 
 .text {

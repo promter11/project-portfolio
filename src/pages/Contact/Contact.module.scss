@@ -1,0 +1,141 @@
+@import "../../styles/_variables";
+
+.contact {
+  height: 100%;
+  padding: 8rem 14rem;
+  background: rgba(0, 0, 0, 0.75) url("../../assets/images/Contact.jpg")
+    no-repeat fixed center center / cover;
+  background-blend-mode: darken;
+}
+
+.title {
+  margin-bottom: 8rem;
+  text-align: right;
+  letter-spacing: 1rem;
+  opacity: 0.25;
+}
+
+.content {
+  color: $white-color;
+}
+
+.contentTitle {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.block {
+  width: 50%;
+  padding: 4rem;
+  background-color: $white-color;
+
+  &.blue {
+    background-color: $blue-block-color;
+  }
+
+  &:first-child {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+  }
+
+  &:last-child {
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+}
+
+.blockTitle {
+  margin-bottom: 8rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 2.4rem;
+
+  &.black {
+    color: $black-color;
+  }
+}
+
+.data {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+
+.dataImage {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+}
+
+.dataText {
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formLabel {
+  max-width: 32rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.formText {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1;
+  color: $black-color;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+}
+
+.formInput,
+.formTextarea,
+.formSubmit {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 150%;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid $form-border-color;
+  outline: none;
+  background-color: transparent;
+  color: $black-color;
+}
+
+.formTextarea {
+  height: 12rem;
+  resize: none;
+}
+
+.formSubmit {
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  border: 0;
+  cursor: pointer;
+  background-color: $black-color;
+  color: $white-color;
+}
