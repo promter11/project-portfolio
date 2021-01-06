@@ -22,8 +22,8 @@
   padding: 6rem 8rem;
   border-radius: 0.4rem;
   box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
-  background-color: $about-block-color;
-  color: $black-color;
+  background-color: transparent;
+  color: $white-color;
 }
 
 .subtitle,
@@ -54,14 +54,16 @@
   line-height: 100%;
   text-transform: uppercase;
   letter-spacing: 0.02rem;
-  border: 0.1rem solid $black-color;
-  transition: all 0.25s ease-in-out;
+  border: 0.1rem solid $white-color;
+  transition: all 0.5s ease;
   background-color: transparent;
-  color: $black-color;
+  color: $white-color;
 
   &:hover {
-    background-color: $black-color;
-    color: $white-color;
+    box-shadow: inset 10.2rem 0 0 0 $white-color,
+      inset -10.2rem 0 0 0 $white-color;
+    background-color: transparent;
+    color: $black-color;
   }
 
   &:active {

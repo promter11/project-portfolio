@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
+import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import NoMatch from "./pages/NoMatch";
 
@@ -18,6 +19,9 @@ const Routes = () => {
       </Route>
       <Route path="/skills">
         <Skills />
+      </Route>
+      <Route path="/portfolio">
+        <Portfolio />
       </Route>
       <Route path="/contact">
         <Contact />

@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.portfolio {
+  height: 100%;
+  padding: 8rem 14rem;
+  background: rgba(0, 0, 0, 0.75) url("../../assets/images/Portfolio.jpg")
+    no-repeat center center / cover;
+  background-blend-mode: darken;
+}
+
+.title {
+  margin-bottom: 8rem;
+  text-align: right;
+  letter-spacing: 1rem;
+  opacity: 0.25;
+}
