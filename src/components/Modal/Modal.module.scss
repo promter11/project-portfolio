@@ -1,0 +1,21 @@
+@import "../../styles/_variables";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  max-width: 47rem;
+  width: 100%;
+  padding: 4rem;
+  background-color: $white-color;
+}

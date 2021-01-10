@@ -20,11 +20,15 @@ const Contact = () => {
             </div>
             <div className={styles.data}>
               <img className={styles.dataImage} src={Phone} alt="Phone" />
-              <span className={styles.dataText}>+7 (937) 098-05-94</span>
+              <a className={styles.dataText} href="tel:79370980594">
+                +7 (937) 098-05-94
+              </a>
             </div>
             <div className={styles.data}>
               <img className={styles.dataImage} src={Email} alt="Email" />
-              <span className={styles.dataText}>promter11@gmail.com</span>
+              <a className={styles.dataText} href="mailto:promter11@gmail.com">
+                promter11@gmail.com
+              </a>
             </div>
           </div>
           <div className={styles.block}>
@@ -33,7 +37,7 @@ const Contact = () => {
             </h2>
             <form className={styles.form}>
               <label className={styles.formLabel}>
-                <span className={styles.formText}>Name *</span>
+                <span className={styles.formText}>Name</span>
                 <input
                   className={styles.formInput}
                   type="text"
@@ -41,15 +45,15 @@ const Contact = () => {
                 />
               </label>
               <label className={styles.formLabel}>
-                <span className={styles.formText}>E-Mail *</span>
+                <span className={styles.formText}>E-Mail</span>
                 <input
                   className={styles.formInput}
                   type="text"
                   maxLength={40}
                 />
               </label>
-              <label className={styles.formLabel}>
-                <span className={styles.formText}>Message *</span>
+              <label className={`${styles.formLabel} ${styles.formLabelFull}`}>
+                <span className={styles.formText}>Message</span>
                 <textarea className={styles.formTextarea} maxLength={200} />
               </label>
               <button className={styles.formSubmit}>Submit</button>

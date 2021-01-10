@@ -38,4 +38,11 @@ img {
 
 button {
   border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.swiper-button-disabled {
+  opacity: 0.25;
+  pointer-events: none;
 }
