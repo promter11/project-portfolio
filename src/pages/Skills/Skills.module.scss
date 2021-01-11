@@ -4,7 +4,7 @@
   height: 100%;
   padding: 8rem 14rem;
   background: rgba(0, 0, 0, 0.75) url("../../assets/images/Skills.jpg")
-    no-repeat center center / cover;
+    no-repeat fixed center center / cover;
   background-blend-mode: darken;
 }
 
@@ -19,9 +19,15 @@
   margin-bottom: 8rem;
 }
 
+.contentBlock {
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+}
+
 .contentTitle {
   position: relative;
-  margin-bottom: 9rem;
+  margin-bottom: calc(8rem + 1rem);
   font-size: 2.4rem;
   font-weight: 900;
   line-height: 2.8rem;
@@ -48,9 +54,10 @@
 }
 
 .image {
+  display: block;
   width: 6rem;
-  height: auto;
-  margin-bottom: 2rem;
+  height: 6rem;
+  margin: 0 auto 2rem auto;
 }
 
 .blockTitle {

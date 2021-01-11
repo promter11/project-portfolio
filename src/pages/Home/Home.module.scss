@@ -12,10 +12,16 @@
   background-blend-mode: darken;
 }
 
+.container {
+  max-width: 144rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .title {
   max-width: 49rem;
   margin-bottom: 3rem;
-  text-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.5);
+  text-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 1);
 }
 
 .desc {

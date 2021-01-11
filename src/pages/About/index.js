@@ -9,14 +9,17 @@ const About = () => {
       <div className={styles.block}>
         <span className={styles.subtitle}>Some words to say...</span>
         <p className={styles.text}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          I'm a front-end developer building user interfaces using React.
         </p>
         <p className={styles.text}>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          I'm well organized, motivated, team oriented and constantly working to
+          improve my professional skills. I pay attention to detail, but without
+          excessive perfectionism when it hurts development speed.
+        </p>
+        <p className={styles.text}>
+          Interested in working on ambitious projects on an up-to-date
+          technology stack with colleagues with extensive experience in
+          front-end development who enjoy sharing their knowledge.
         </p>
         <a className={styles.link} href="/files/resume.pdf" download>
           Download Resume
