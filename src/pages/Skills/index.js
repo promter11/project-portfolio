@@ -211,7 +211,7 @@ const Skills = () => {
       </div>
       <p className={styles.desc}>
         * And other popular technologies like React Router, Styled Components,
-        Redux Form and others.
+        Redux Form, React Transition Group and others.
       </p>
     </section>
   );

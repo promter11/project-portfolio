@@ -49,8 +49,8 @@ const initialSocialState = [
   },
 ];
 const initialLanguageState = [
-  { id: 0, icon: Russia },
-  { id: 1, icon: UK },
+  { id: 0, icon: Russia, active: false },
+  { id: 1, icon: UK, active: true },
 ];
 
 const Sidebar = () => {

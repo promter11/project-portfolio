@@ -5,6 +5,7 @@ import Carousel from "../../components/Carousel";
 import Olivia from "../../assets/images/Portfolio Item 1.jpg";
 import Passion from "../../assets/images/Portfolio Item 2.jpg";
 import AppLab from "../../assets/images/Portfolio Item 3.jpg";
+import Covid from "../../assets/images/Portfolio Item 4.jpg";
 import styles from "./Portfolio.module.scss";
 
 const slides = [
@@ -72,7 +73,7 @@ const slides = [
     fullDescription:
       "Adaptive Landing Page on the COVID-19 theme with little functionality in the form of smooth transitions, a slider, a modal window, etc., as well as up-to-date data on the number of infected by country, obtained by contacting ninja-api via fetch.",
     technologies: ["PUG", "SCSS", "Vanilla JS", "Gulp"],
-    image: AppLab,
+    image: Covid,
     path: "/",
   },
 ];

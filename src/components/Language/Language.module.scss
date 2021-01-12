@@ -1,18 +1,118 @@
+@import "../../styles/_variables";
+
 .language {
-  display: flex;
-}
+  position: relative;
 
-.button {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  background-color: transparent;
-
-  &:not(:last-child) {
-    margin-right: 3rem;
+  .languageEnter,
+  .languageExit {
+    opacity: 0;
+    transform: scale(0);
   }
-}
 
-.icon {
-  display: block;
+  .languageEnterActive {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .languageEnter,
+  .languageEnterActive,
+  .languageExit {
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .arrowEnter {
+    transform: rotate(0);
+  }
+
+  .arrowEnterActive {
+    transform: rotate(180deg);
+  }
+
+  .arrowEnterDone {
+    transform: rotate(180deg);
+  }
+
+  .arrowExit {
+    transform: rotate(180deg);
+  }
+
+  .arrowExitActive {
+    transform: rotate(360deg);
+  }
+
+  .arrowExitDone {
+    transform: rotate(0);
+  }
+
+  .arrowEnter,
+  .arrowEnterActive,
+  .arrowExit,
+  .arrowExitActive {
+    transition: transform 300ms;
+  }
+
+  .block {
+    display: flex;
+    align-items: center;
+
+    .button {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    .arrowButton {
+      width: 100%;
+      height: 100%;
+
+      .arrow {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+
+    .button,
+    .arrowButton {
+      flex-shrink: 0;
+    }
+  }
+
+  .hidden {
+    position: absolute;
+    top: auto;
+    bottom: calc(100% + 2rem);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    background-color: $link-background-color-active;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1rem solid transparent;
+      border-top: 1rem solid $link-background-color-active;
+    }
+
+    .button {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .block,
+  .hidden {
+    .icon,
+    .arrow,
+    .button {
+      display: block;
+    }
+
+    .button {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 }

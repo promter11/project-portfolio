@@ -39,11 +39,11 @@ const Slide = ({
         classNames={{
           enter: modalStyles.modalEnter,
           enterActive: modalStyles.modalEnterActive,
+          enterDone: modalStyles.modalEnterDone,
           exit: modalStyles.modalExit,
           exitActive: modalStyles.modalExitActive,
+          exitDone: modalStyles.modalExitDone,
         }}
-        mountOnEnter
-        unmountOnExit
       >
         <RenderModal>
           <div className={modalStyles.modalWrapper}>
