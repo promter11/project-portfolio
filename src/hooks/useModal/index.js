@@ -17,6 +17,8 @@ export const useModal = () => {
   };
 
   return {
+    visible,
+    setVisible,
     showModal,
     closeModal,
     RenderModal,

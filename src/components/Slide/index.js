@@ -1,13 +1,22 @@
 import React, { createElement } from "react";
+import { CSSTransition } from "react-transition-group";
 
 import { useModal } from "../../hooks/useModal";
 
 import { ReactComponent as Info } from "../../assets/icons/portfolio/info.svg";
-import { ReactComponent as Enter } from "../../assets/icons/portfolio/enter.svg";
 import styles from "./Slide.module.scss";
+import modalStyles from "../Modal/Modal.module.scss";
 
-const Slide = ({ id, title, date, description, image, path }) => {
-  const { showModal, RenderModal } = useModal();
+const Slide = ({
+  title,
+  date,
+  description,
+  fullDescription,
+  technologies,
+  image,
+  path,
+}) => {
+  const { visible, showModal, RenderModal } = useModal();
 
   return (
     <div className={styles.slide}>
@@ -22,12 +31,48 @@ const Slide = ({ id, title, date, description, image, path }) => {
           <button className={styles.button} onClick={showModal}>
             {createElement(Info, { className: styles.icon }, null)}
           </button>
-          <a className={styles.link} href={path}>
-            {createElement(Enter, { className: styles.icon }, null)}
-          </a>
         </div>
       </div>
-      <RenderModal>Modal #{id} e</RenderModal>
+      <CSSTransition
+        in={visible}
+        timeout={300}
+        classNames={{
+          enter: modalStyles.modalEnter,
+          enterActive: modalStyles.modalEnterActive,
+          exit: modalStyles.modalExit,
+          exitActive: modalStyles.modalExitActive,
+        }}
+        mountOnEnter
+        unmountOnExit
+      >
+        <RenderModal>
+          <div className={modalStyles.modalWrapper}>
+            <div className={modalStyles.modalBlock}>
+              <img
+                className={modalStyles.modalImage}
+                src={image}
+                alt="Project"
+              />
+            </div>
+            <div className={modalStyles.modalBlock}>
+              <h3 className={modalStyles.modalTitle}>{title}</h3>
+              <p className={modalStyles.modalDesc}>{fullDescription}</p>
+              <ul className={modalStyles.modalList}>
+                {technologies.map((technology, index) => {
+                  return (
+                    <li key={index} className={modalStyles.modalListItem}>
+                      {technology}
+                    </li>
+                  );
+                })}
+              </ul>
+              <a className={modalStyles.modalLink} href={path}>
+                See more
+              </a>
+            </div>
+          </div>
+        </RenderModal>
+      </CSSTransition>
     </div>
   );
 };
