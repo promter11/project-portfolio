@@ -1,0 +1,21 @@
+@import "../../styles/_variables";
+
+.burger {
+  width: 2rem;
+  margin: 0 auto;
+  cursor: pointer;
+
+  @media (min-width: 993px) {
+    display: none;
+  }
+
+  .item {
+    width: 100%;
+    height: 0.2rem;
+    background-color: $white-color;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

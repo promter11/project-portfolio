@@ -16,26 +16,25 @@ const Language = ({ languages }) => {
           className={styles.button}
           onClick={() => setIsHiddenVisible(!isHiddenVisible)}
         >
-          <img className={styles.icon} src={activeLanguage.icon} alt="Flag" />
-        </button>
-        <button
-          className={styles.arrowButton}
-          onClick={() => setIsHiddenVisible(!isHiddenVisible)}
-        >
-          <CSSTransition
-            in={isHiddenVisible}
-            timeout={300}
-            classNames={{
-              enter: styles.arrowEnter,
-              enterActive: styles.arrowEnterActive,
-              enterDone: styles.arrowEnterDone,
-              exit: styles.arrowExit,
-              exitActive: styles.arrowExitActive,
-              exitDone: styles.arrowExitDone,
-            }}
-          >
-            <img className={styles.arrow} src={Arrow} alt="Arrow" />
-          </CSSTransition>
+          <div className={styles.wrapper}>
+            <img className={styles.icon} src={activeLanguage.icon} alt="Flag" />
+          </div>
+          <div className={styles.wrapper}>
+            <CSSTransition
+              in={isHiddenVisible}
+              timeout={300}
+              classNames={{
+                enter: styles.arrowEnter,
+                enterActive: styles.arrowEnterActive,
+                enterDone: styles.arrowEnterDone,
+                exit: styles.arrowExit,
+                exitActive: styles.arrowExitActive,
+                exitDone: styles.arrowExitDone,
+              }}
+            >
+              <img className={styles.arrow} src={Arrow} alt="Arrow" />
+            </CSSTransition>
+          </div>
         </button>
       </div>
       <CSSTransition

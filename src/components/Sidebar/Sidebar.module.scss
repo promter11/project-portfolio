@@ -10,4 +10,19 @@
   padding: 4rem;
   font-family: "Open Sans", sans-serif;
   background-color: $sidebar-background-color;
+
+  @media (max-width: 992px) {
+    width: 8rem;
+    padding: 3rem;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+  }
 }

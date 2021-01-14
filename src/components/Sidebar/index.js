@@ -1,8 +1,8 @@
 import React from "react";
 
 import User from "../User";
+import Burger from "../Burger";
 import Menu from "../Menu";
-import Flex from "../Flex";
 import Social from "../Social";
 import Language from "../Language";
 
@@ -56,12 +56,13 @@ const initialLanguageState = [
 const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
+      <Burger />
       <User {...initialUserState} />
       <Menu items={initialMenuState} />
-      <Flex container justifyContent="space-between" alignItems="center">
+      <div className={styles.wrapper}>
         <Language languages={initialLanguageState} />
         <Social socials={initialSocialState} />
-      </Flex>
+      </div>
     </aside>
   );
 };

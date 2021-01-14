@@ -6,163 +6,57 @@
   background: rgba(0, 0, 0, 0.75) url("../../assets/images/Contact.jpg")
     no-repeat center center / cover;
   background-blend-mode: darken;
-}
 
-.title {
-  margin-bottom: 8rem;
-  text-align: right;
-  letter-spacing: 1rem;
-  opacity: 0.25;
-}
-
-.content {
-  color: $white-color;
-}
-
-.contentTitle {
-  margin-bottom: 2rem;
-  font-size: 2.4rem;
-  font-weight: 900;
-  line-height: 2.8rem;
-  text-transform: uppercase;
-}
-
-.wrapper {
-  display: flex;
-}
-
-.block {
-  padding: 4rem;
-  background-color: $white-color;
-
-  &.blue {
-    background-color: $contact-block-color;
+  .title {
+    margin-bottom: 8rem;
+    text-align: right;
+    letter-spacing: 1rem;
+    opacity: 0.25;
   }
 
-  &:first-child {
-    width: 40%;
-    border-radius: 0.4rem 0 0 0.4rem;
-  }
-
-  &:last-child {
-    width: 60%;
-    border-radius: 0 0.4rem 0.4rem 0;
-  }
-}
-
-.blockTitle {
-  margin-bottom: 8rem;
-  font-size: 1.8rem;
-  font-weight: 900;
-  line-height: 2.4rem;
-
-  &.black {
-    color: $black-color;
-  }
-}
-
-.data {
-  display: flex;
-  align-items: center;
-
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-}
-
-.dataImage {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  margin-right: 1.5rem;
-}
-
-.dataText {
-  font-size: 1.4rem;
-  font-weight: 100;
-  line-height: 1.8rem;
-  color: $white-color;
-}
-
-.form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.formLabel {
-  width: calc(50% - 1.5rem);
-  margin-bottom: 3rem;
-
-  &.formLabelFull {
-    width: 100%;
-  }
-}
-
-.formText {
-  display: block;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1;
-  text-transform: uppercase;
-  color: $black-color;
-}
-
-.formInput,
-.formTextarea {
-  width: 100%;
-  transition: border 0.25s ease;
-
-  &:hover {
-    border-bottom: 0.1rem solid lighten($contact-block-color, 25%);
-  }
-
-  &:focus {
-    border: 0.1rem solid $contact-block-color;
-  }
-}
-
-.formInput,
-.formTextarea,
-.formSubmit {
-  font-family: "Public Sans", sans-serif;
-  font-size: 1.4rem;
-  font-weight: normal;
-  line-height: 150%;
-  padding: 1rem 1.5rem;
-  border: 0.1rem solid $form-border-color;
-  outline: none;
-  background-color: transparent;
-  color: $black-color;
-}
-
-.formTextarea {
-  height: 12rem;
-  resize: none;
-}
-
-.formSubmit {
-  line-height: 1;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 1.5rem 3rem;
-  border: 0.1rem solid $black-color;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  background-color: transparent;
-  color: $black-color;
-
-  &:hover {
-    box-shadow: inset 6rem 0 0 0 $contact-block-color,
-      inset -6rem 0 0 0 $contact-block-color;
-    background-color: transparent;
+  .content {
     color: $white-color;
-  }
 
-  &:active {
-    transition: none;
-    transform: translateY(0.2rem);
+    .contentTitle {
+      margin-bottom: 2rem;
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 2.8rem;
+      text-transform: uppercase;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+
+    .block {
+      padding: 4rem;
+      background-color: $white-color;
+
+      &.blue {
+        background-color: $contact-block-color;
+      }
+
+      &:first-child {
+        width: 40%;
+        border-radius: 0.4rem 0 0 0.4rem;
+      }
+
+      &:last-child {
+        width: 60%;
+        border-radius: 0 0.4rem 0.4rem 0;
+      }
+
+      .blockTitle {
+        margin-bottom: 8rem;
+        font-size: 1.8rem;
+        font-weight: 900;
+        line-height: 2.4rem;
+
+        &.black {
+          color: $black-color;
+        }
+      }
+    }
   }
 }

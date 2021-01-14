@@ -1,4 +1,8 @@
 .main {
   width: 100%;
   padding-left: 32rem;
+
+  @media (max-width: 992px) {
+    padding-left: 8rem;
+  }
 }
