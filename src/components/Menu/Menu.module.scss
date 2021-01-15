@@ -5,21 +5,12 @@
   flex-direction: column;
   margin: 0 -4rem;
 
-  @media (max-width: 992px) {
-    margin: 0 -3rem;
-  }
-
   .link {
     display: flex;
     align-items: center;
     padding: 1.5rem 4rem 1.5rem 3.6rem;
     border-left: 0.4rem solid transparent;
     transition: all 0.2s ease-in-out;
-
-    @media (max-width: 992px) {
-      justify-content: center;
-      padding: 1.5rem 2rem;
-    }
 
     &.active {
       border-left: 0.4rem solid $white-color;
@@ -38,10 +29,6 @@
     width: 2rem;
     height: 2rem;
     margin-right: 3rem;
-
-    @media (max-width: 992px) {
-      margin-right: 0;
-    }
   }
 
   .text {
@@ -50,9 +37,5 @@
     line-height: 100%;
     text-transform: uppercase;
     color: $white-color;
-
-    @media (max-width: 992px) {
-      display: none;
-    }
   }
 }

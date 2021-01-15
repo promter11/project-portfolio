@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Container from "../../components/Container";
 import Heading from "../../components/Heading";
+
 import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
     <section className={styles.home}>
-      <div className={styles.container}>
+      <Container>
         <Heading className={styles.title} level={1}>
           Hello, I'm Alex.
         </Heading>
@@ -17,7 +19,7 @@ const Home = () => {
         <Link className={styles.link} to="/about">
           Learn more
         </Link>
-      </div>
+      </Container>
     </section>
   );
 };

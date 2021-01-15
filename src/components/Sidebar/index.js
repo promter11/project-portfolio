@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { CSSTransition } from "react-transition-group";
 
 import User from "../User";
 import Burger from "../Burger";
@@ -54,16 +55,31 @@ const initialLanguageState = [
 ];
 
 const Sidebar = () => {
+  const [active, setActive] = useState(false);
+
   return (
-    <aside className={styles.sidebar}>
-      <Burger />
-      <User {...initialUserState} />
-      <Menu items={initialMenuState} />
-      <div className={styles.wrapper}>
-        <Language languages={initialLanguageState} />
-        <Social socials={initialSocialState} />
-      </div>
-    </aside>
+    <CSSTransition
+      in={active}
+      timeout={0}
+      classNames={{
+        enter: styles.sidebarEnter,
+        enterActive: styles.sidebarEnterActive,
+        enterDone: styles.sidebarEnterDone,
+        exit: styles.sidebarExit,
+        exitActive: styles.sidebarExitActive,
+        exitDone: styles.sidebarExitDone,
+      }}
+    >
+      <aside className={styles.sidebar}>
+        <Burger active={active} onSetActive={setActive} />
+        <User {...initialUserState} />
+        <Menu items={initialMenuState} />
+        <div className={styles.wrapper}>
+          <Language languages={initialLanguageState} />
+          <Social socials={initialSocialState} />
+        </div>
+      </aside>
+    </CSSTransition>
   );
 };
 

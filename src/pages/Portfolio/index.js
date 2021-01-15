@@ -1,5 +1,6 @@
 import React from "react";
 
+import Container from "../../components/Container";
 import Carousel from "../../components/Carousel";
 
 import Olivia from "../../assets/images/Portfolio Item 1.jpg";
@@ -81,8 +82,10 @@ const slides = [
 const Portfolio = () => {
   return (
     <section className={styles.portfolio}>
-      <h1 className={styles.title}>Portfolio</h1>
-      <Carousel slides={slides} />
+      <Container>
+        <h1 className={styles.title}>Portfolio</h1>
+        <Carousel slides={slides} />
+      </Container>
     </section>
   );
 };

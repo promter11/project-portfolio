@@ -1,5 +1,7 @@
 import React from "react";
 
+import Container from "../../components/Container";
+
 import HTML from "../../assets/icons/skills/html.svg";
 import Pug from "../../assets/icons/skills/pug.svg";
 import CSS from "../../assets/icons/skills/css.svg";
@@ -184,35 +186,37 @@ const initialState = [
 const Skills = () => {
   return (
     <section className={styles.skills}>
-      <h1 className={styles.title}>Skills</h1>
-      <div className={styles.content}>
-        {initialState.map(({ id, title, items }, _) => {
-          return (
-            <div className={styles.contentBlock} key={id}>
-              <h2 className={styles.contentTitle}>{title}</h2>
-              <div className={styles.wrapper}>
-                {items.map(({ id, title, text, image }, _) => {
-                  return (
-                    <div key={id} className={styles.block}>
-                      <img
-                        className={styles.image}
-                        src={image}
-                        alt="Technology"
-                      />
-                      <h3 className={styles.blockTitle}>{title}</h3>
-                      <p className={styles.text}>{text}</p>
-                    </div>
-                  );
-                })}
+      <Container>
+        <h1 className={styles.title}>Skills</h1>
+        <div className={styles.content}>
+          {initialState.map(({ id, title, items }, _) => {
+            return (
+              <div className={styles.contentBlock} key={id}>
+                <h2 className={styles.contentTitle}>{title}</h2>
+                <div className={styles.wrapper}>
+                  {items.map(({ id, title, text, image }, _) => {
+                    return (
+                      <div key={id} className={styles.block}>
+                        <img
+                          className={styles.image}
+                          src={image}
+                          alt="Technology"
+                        />
+                        <h3 className={styles.blockTitle}>{title}</h3>
+                        <p className={styles.text}>{text}</p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-      <p className={styles.desc}>
-        * And other popular technologies like React Router, Styled Components,
-        Redux Form, React Transition Group and others.
-      </p>
+            );
+          })}
+        </div>
+        <p className={styles.desc}>
+          * And other popular technologies like React Router, Styled Components,
+          Redux Form, React Transition Group and others.
+        </p>
+      </Container>
     </section>
   );
 };

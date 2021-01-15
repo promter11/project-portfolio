@@ -4,10 +4,6 @@
   text-align: center;
   color: $white-color;
 
-  @media (max-width: 993px) {
-    display: none;
-  }
-
   .avatar {
     width: 10rem;
     height: 10rem;
@@ -17,9 +13,6 @@
   }
 
   .title {
-    font-size: 1.6rem;
-    font-weight: 900;
-    line-height: 150%;
     text-transform: uppercase;
   }
 

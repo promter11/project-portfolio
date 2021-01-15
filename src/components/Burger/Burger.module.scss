@@ -1,8 +1,9 @@
 @import "../../styles/_variables";
 
 .burger {
+  position: absolute;
+  left: calc(100% + 4rem);
   width: 2rem;
-  margin: 0 auto;
   cursor: pointer;
 
   @media (min-width: 993px) {
@@ -13,6 +14,39 @@
     width: 100%;
     height: 0.2rem;
     background-color: $white-color;
+
+    &.itemEnter,
+    &.itemExitActive,
+    &.itemExitDone {
+      transition: transform 300ms;
+
+      &:first-child,
+      &:last-child {
+        transform: translate(0);
+      }
+
+      &:nth-child(2) {
+        opacity: 1;
+      }
+    }
+
+    &.itemEnterActive,
+    &.itemEnterDone,
+    &.itemExit {
+      transition: transform 300ms;
+
+      &:first-child {
+        transform: translate(0, 0.7rem) rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: translate(0, -0.7rem) rotate(45deg);
+      }
+    }
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;

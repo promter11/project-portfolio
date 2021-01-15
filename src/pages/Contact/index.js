@@ -1,5 +1,6 @@
 import React from "react";
 
+import Container from "../../components/Container";
 import Info from "../../components/Info";
 import Form from "../../components/Form";
 
@@ -31,22 +32,24 @@ const items = [
 const Contact = () => {
   return (
     <section className={styles.contact}>
-      <h1 className={styles.title}>Contact</h1>
-      <div className={styles.content}>
-        <h2 className={styles.contentTitle}>Let's keep in touch</h2>
-        <div className={styles.wrapper}>
-          <div className={`${styles.block} ${styles.blue}`}>
-            <h3 className={styles.blockTitle}>Contacts</h3>
-            <Info items={items} />
-          </div>
-          <div className={styles.block}>
-            <h2 className={`${styles.blockTitle} ${styles.black}`}>
-              Send me a message
-            </h2>
-            <Form />
+      <Container>
+        <h1 className={styles.title}>Contact</h1>
+        <div className={styles.content}>
+          <h2 className={styles.contentTitle}>Let's keep in touch</h2>
+          <div className={styles.wrapper}>
+            <div className={`${styles.block} ${styles.blue}`}>
+              <h3 className={styles.blockTitle}>Contacts</h3>
+              <Info items={items} />
+            </div>
+            <div className={styles.block}>
+              <h3 className={`${styles.blockTitle} ${styles.black}`}>
+                Send me a message
+              </h3>
+              <Form />
+            </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

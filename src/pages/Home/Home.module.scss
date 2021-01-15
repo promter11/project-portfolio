@@ -1,21 +1,13 @@
-@import "../../styles/variables";
+@import "../../styles/_variables";
+@import "../../styles/_mixins";
 
 .home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flex(no-wrap, column, center, flex-start);
   height: 100%;
   padding: 0 14rem;
   background: rgba(0, 0, 0, 0.75) url("../../assets/images/Home.jpg") no-repeat
     center center / cover;
   background-blend-mode: darken;
-
-  .container {
-    max-width: 117rem;
-    width: 100%;
-    margin: 0 auto;
-  }
 
   .title {
     max-width: 49rem;
@@ -25,9 +17,6 @@
 
   .desc {
     margin-bottom: 4rem;
-    font-size: 1.8rem;
-    font-weight: 100;
-    line-height: 150%;
     color: $white-color;
   }
 

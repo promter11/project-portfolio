@@ -3,10 +3,6 @@
 .language {
   position: relative;
 
-  @media (max-width: 992px) {
-    display: none;
-  }
-
   .languageEnter,
   .languageExit {
     opacity: 0;
@@ -24,28 +20,19 @@
     transition: opacity 300ms, transform 300ms;
   }
 
-  .arrowEnter {
+  .arrowEnter,
+  .arrowExitDone {
     transform: rotate(0);
   }
 
-  .arrowEnterActive {
-    transform: rotate(180deg);
-  }
-
-  .arrowEnterDone {
-    transform: rotate(180deg);
-  }
-
+  .arrowEnterActive,
+  .arrowEnterDone,
   .arrowExit {
     transform: rotate(180deg);
   }
 
   .arrowExitActive {
     transform: rotate(360deg);
-  }
-
-  .arrowExitDone {
-    transform: rotate(0);
   }
 
   .arrowEnter,

@@ -2,6 +2,8 @@
 
 .sidebar {
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,18 +13,31 @@
   font-family: "Open Sans", sans-serif;
   background-color: $sidebar-background-color;
 
+  &.sidebarEnter,
+  &.sidebarExitActive,
+  &.sidebarExitDone {
+    @media (max-width: 992px) {
+      left: -32rem;
+      transition: left 300ms;
+    }
+  }
+
+  &.sidebarEnterActive,
+  &.sidebarEnterDone,
+  &.sidebarExit {
+    @media (max-width: 992px) {
+      left: 0;
+      transition: left 300ms;
+    }
+  }
+
   @media (max-width: 992px) {
-    width: 8rem;
-    padding: 3rem;
+    left: -32rem;
   }
 
   .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media (max-width: 992px) {
-      flex-direction: column-reverse;
-    }
   }
 }

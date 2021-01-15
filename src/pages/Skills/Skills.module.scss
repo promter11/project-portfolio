@@ -1,4 +1,5 @@
 @import "../../styles/_variables";
+@import "../../styles/_extends";
 
 .skills {
   height: 100%;
@@ -8,10 +9,7 @@
   background-blend-mode: darken;
 
   .title {
-    margin-bottom: 8rem;
-    text-align: right;
-    letter-spacing: 1rem;
-    opacity: 0.25;
+    @extend %section-main-title;
   }
 
   .content {
@@ -19,9 +17,6 @@
       .contentTitle {
         position: relative;
         margin-bottom: calc(8rem + 1rem);
-        font-size: 2.4rem;
-        font-weight: 900;
-        line-height: 2.8rem;
         color: $white-color;
 
         &:before {
@@ -55,26 +50,18 @@
 
       .blockTitle {
         margin-bottom: 2rem;
-        font-size: 1.8rem;
-        font-weight: 900;
-        line-height: 1;
-        text-transform: uppercase;
       }
 
       .text {
         max-width: 18rem;
         margin: 0 auto;
         font-size: 1.4rem;
-        font-weight: 100;
-        line-height: 150%;
       }
     }
   }
 
   .desc {
     font-size: 1.4rem;
-    font-weight: 100;
-    line-height: 1;
     color: $white-color;
   }
 }
