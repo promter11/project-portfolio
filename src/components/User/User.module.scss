@@ -1,13 +1,13 @@
 @import "../../styles/_variables";
+@import "../../styles/_mixins";
 
 .user {
   text-align: center;
   color: $white-color;
 
   .avatar {
-    width: 10rem;
-    height: 10rem;
-    margin-bottom: 2rem;
+    @include width-height(10rem, 10rem);
+    margin: 0 auto 2rem auto;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -18,7 +18,5 @@
 
   .position {
     font-size: 1.2rem;
-    font-weight: 100;
-    line-height: 150%;
   }
 }

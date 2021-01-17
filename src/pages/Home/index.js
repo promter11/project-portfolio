@@ -11,7 +11,9 @@ const Home = () => {
     <section className={styles.home}>
       <Container>
         <Heading className={styles.title} level={1}>
-          Hello, I'm Alex.
+          Hello,
+          <br />
+          I'm Alex.
         </Heading>
         <p className={styles.desc}>
           Front-end developer who loves to work with React.

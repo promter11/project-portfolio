@@ -17,24 +17,28 @@ body {
 
 h1 {
   font-size: 9.6rem;
-  line-height: 125%;
   text-transform: uppercase;
   color: $white-color;
+
+  @media (max-width: 576px) {
+    font-size: 6.4rem;
+  }
+
+  @media (min-width: 577px) and (max-width: 1200px) {
+    font-size: 7.8rem;
+  }
 }
 
 h2 {
   font-size: 2.4rem;
-  line-height: 2.8rem;
 }
 
 h3 {
   font-size: 1.8rem;
-  line-height: 2.4rem;
 }
 
 h4 {
   font-size: 1.4rem;
-  line-height: 1.8rem;
 }
 
 h1,
@@ -42,6 +46,7 @@ h2,
 h3,
 h4 {
   font-weight: 900;
+  line-height: 150%;
 }
 
 p {
@@ -59,6 +64,7 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }

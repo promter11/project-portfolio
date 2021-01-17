@@ -1,24 +1,44 @@
 @import "../../styles/_variables";
+@import "../../styles/_mixins";
 
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 32rem;
-  height: 100vh;
+  z-index: 10;
+  @include flex(nowrap, column, space-between, inherit);
+  @include width-height(32rem, 100vh);
   padding: 4rem;
   font-family: "Open Sans", sans-serif;
   background-color: $sidebar-background-color;
 
+  @media (max-width: 576px) {
+    width: 28rem;
+    left: -28rem;
+  }
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    left: -32rem;
+  }
+
+  &.sidebarEnter,
+  &.sidebarEnterActive,
+  &.sidebarEnterDone,
+  &.sidebarExit,
+  &.sidebarExitActive,
+  &.sidebarExitDone {
+    transition: left 300ms;
+  }
+
   &.sidebarEnter,
   &.sidebarExitActive,
   &.sidebarExitDone {
-    @media (max-width: 992px) {
+    @media (max-width: 576px) {
+      left: -28rem;
+    }
+
+    @media (min-width: 577px) and (max-width: 992px) {
       left: -32rem;
-      transition: left 300ms;
     }
   }
 
@@ -27,17 +47,10 @@
   &.sidebarExit {
     @media (max-width: 992px) {
       left: 0;
-      transition: left 300ms;
     }
   }
 
-  @media (max-width: 992px) {
-    left: -32rem;
-  }
-
   .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(nowrap, row, space-between, center);
   }
 }

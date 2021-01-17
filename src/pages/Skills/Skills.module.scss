@@ -1,12 +1,12 @@
 @import "../../styles/_variables";
 @import "../../styles/_extends";
+@import "../../styles/_mixins";
 
 .skills {
-  height: 100%;
-  padding: 8rem 14rem;
+  @include flex(nowrap, column, center, center);
+  @extend %section-styles;
   background: rgba(0, 0, 0, 0.75) url("../../assets/images/Skills.jpg")
     no-repeat fixed center center / cover;
-  background-blend-mode: darken;
 
   .title {
     @extend %section-main-title;
@@ -19,32 +19,37 @@
         margin-bottom: calc(8rem + 1rem);
         color: $white-color;
 
+        @media (max-width: 576px) {
+          margin-bottom: calc(4rem + 1rem);
+        }
+
         &:before {
           content: "";
           position: absolute;
           bottom: -1rem;
-          width: 4rem;
-          height: 0.4rem;
+          @include width-height(4rem, 0.4rem);
           background-color: $white-color;
         }
       }
 
       .wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        @include flex(wrap, row, flex-start, flex-start);
       }
 
       .block {
-        width: calc((100% / 3) - (3rem / 3));
+        @extend %block-grid;
         margin-bottom: 8rem;
+        padding: 0 1.5rem;
         text-align: center;
         color: $white-color;
+
+        @media (max-width: 576px) {
+          margin-bottom: 4rem;
+        }
       }
 
       .image {
-        display: block;
-        width: 6rem;
-        height: 6rem;
+        @include width-height(6rem, 6rem);
         margin: 0 auto 2rem auto;
       }
 

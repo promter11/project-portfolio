@@ -1,4 +1,5 @@
 @import "../../styles/_variables";
+@import "../../styles/_mixins";
 
 .language {
   position: relative;
@@ -44,19 +45,16 @@
 
   .block {
     .button {
-      display: flex;
-      align-items: center;
+      @include flex(nowrap, row, flex-start, center);
 
       .wrapper {
         &:first-child {
-          width: 2rem;
-          height: 2rem;
+          @include width-height(2rem, 2rem);
           margin-right: 1rem;
         }
 
         &:last-child {
-          width: 1.2rem;
-          height: 1.2rem;
+          @include width-height(1.2rem, 1.2rem);
         }
       }
     }
@@ -81,20 +79,11 @@
     }
 
     .button {
-      width: 2rem;
-      height: 2rem;
+      @include width-height(2rem, 2rem);
 
       &:not(:last-child) {
         margin-bottom: 1rem;
       }
-    }
-  }
-
-  .block,
-  .hidden {
-    .icon,
-    .arrow {
-      display: block;
     }
   }
 }

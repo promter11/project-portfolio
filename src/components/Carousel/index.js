@@ -31,10 +31,10 @@ const Carousel = ({ slides }) => {
         0: {
           slidesPerView: 1,
         },
-        576: {
+        440: {
           slidesPerView: 1.6,
         },
-        992: {
+        768: {
           slidesPerView: 2.4,
         },
         1920: {

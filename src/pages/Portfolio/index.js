@@ -83,7 +83,7 @@ const Portfolio = () => {
   return (
     <section className={styles.portfolio}>
       <Container>
-        <h1 className={styles.title}>Portfolio</h1>
+        <h1 className={styles.title}>Works</h1>
         <Carousel slides={slides} />
       </Container>
     </section>

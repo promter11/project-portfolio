@@ -1,8 +1,10 @@
 @import "../../styles/_variables";
+@import "../../styles/_mixins";
 
 .burger {
   position: absolute;
-  left: calc(100% + 4rem);
+  top: 3rem;
+  left: calc(100% + 3rem);
   width: 2rem;
   cursor: pointer;
 
@@ -11,8 +13,7 @@
   }
 
   .item {
-    width: 100%;
-    height: 0.2rem;
+    @include width-height(100%, 0.2rem);
     background-color: $white-color;
 
     &.itemEnter,
