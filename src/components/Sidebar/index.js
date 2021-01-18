@@ -5,7 +5,7 @@ import User from "../User";
 import Burger from "../Burger";
 import Menu from "../Menu";
 import Social from "../Social";
-import Language from "../Language";
+import Language from "../../containers/Language";
 
 import Avatar from "../../assets/images/Avatar.jpg";
 import Home from "../../assets/icons/aside/home.svg";
@@ -16,8 +16,6 @@ import Contact from "../../assets/icons/aside/contact.svg";
 import { ReactComponent as Telegram } from "../../assets/icons/aside/telegram.svg";
 import { ReactComponent as Github } from "../../assets/icons/aside/github.svg";
 import { ReactComponent as Email } from "../../assets/icons/aside/email.svg";
-import Russia from "../../assets/icons/aside/russia.svg";
-import UK from "../../assets/icons/aside/uk.svg";
 import styles from "./Sidebar.module.scss";
 
 const initialUserState = {
@@ -49,10 +47,6 @@ const initialSocialState = [
     component: Email,
   },
 ];
-const initialLanguageState = [
-  { id: 0, icon: Russia, active: false },
-  { id: 1, icon: UK, active: true },
-];
 
 const Sidebar = () => {
   const [active, setActive] = useState(false);
@@ -75,7 +69,7 @@ const Sidebar = () => {
         <User {...initialUserState} />
         <Menu items={initialMenuState} />
         <div className={styles.wrapper}>
-          <Language languages={initialLanguageState} />
+          <Language />
           <Social socials={initialSocialState} />
         </div>
       </aside>

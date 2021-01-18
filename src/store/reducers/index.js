@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import Reducer from "./Reducer";
+import LanguageReducer from "./LanguageReducer";
 
-const rootReducer = combineReducers({ Reducer });
+const rootReducer = combineReducers({ LanguageReducer });
 
 export default rootReducer;

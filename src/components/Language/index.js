@@ -1,27 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import { CSSTransition } from "react-transition-group";
 
 import Arrow from "../../assets/icons/aside/arrow-down.svg";
 import styles from "./Language.module.scss";
 
-const Language = ({ languages }) => {
-  const [isHiddenVisible, setIsHiddenVisible] = useState(false);
-
-  const activeLanguage = languages.find((language, _) => language.active);
+const Language = ({ state, actions }) => {
+  const { toggle, defaultLanguage, languagesList } = state;
+  const { setToggle, setLanguage } = actions;
 
   return (
     <div className={styles.language}>
       <div className={styles.block}>
-        <button
-          className={styles.button}
-          onClick={() => setIsHiddenVisible(!isHiddenVisible)}
-        >
+        <button className={styles.button} onClick={() => setToggle()}>
           <div className={styles.wrapper}>
-            <img className={styles.icon} src={activeLanguage.icon} alt="Flag" />
+            <img
+              className={styles.icon}
+              src={defaultLanguage.icon}
+              alt={defaultLanguage.language}
+            />
           </div>
           <div className={styles.wrapper}>
             <CSSTransition
-              in={isHiddenVisible}
+              in={toggle}
               timeout={300}
               classNames={{
                 enter: styles.arrowEnter,
@@ -38,7 +38,7 @@ const Language = ({ languages }) => {
         </button>
       </div>
       <CSSTransition
-        in={isHiddenVisible}
+        in={toggle}
         timeout={300}
         classNames={{
           enter: styles.languageEnter,
@@ -48,10 +48,15 @@ const Language = ({ languages }) => {
         unmountOnExit
       >
         <div className={styles.hidden}>
-          {languages.map(({ id, icon }, _) => {
+          {languagesList.map(({ language, icon }, index) => {
             return (
-              <button key={id} className={styles.button} type="button">
-                <img className={styles.icon} src={icon} alt="Flag" />
+              <button
+                key={index}
+                className={styles.button}
+                type="button"
+                onClick={() => setLanguage(index)}
+              >
+                <img className={styles.icon} src={icon} alt={language} />
               </button>
             );
           })}
