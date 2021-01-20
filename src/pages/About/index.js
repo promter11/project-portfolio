@@ -1,31 +1,41 @@
 import React from "react";
 
+import Heading from "../../components/Heading";
 import Container from "../../components/Container";
+
+import { aboutText } from "../../common/jsonText/aboutText";
+import { loadState } from "../../common/localStorage";
 
 import styles from "./About.module.scss";
 
 const About = () => {
+  const {
+    LanguageReducer: {
+      defaultLanguage: { language },
+    },
+  } = loadState();
+
   return (
     <section className={styles.about}>
       <Container>
-        <h1 className={styles.title}>About</h1>
+        <Heading className={styles.title} level={1}>
+          {aboutText[language].title}
+        </Heading>
         <div className={styles.block}>
-          <h3 className={styles.subtitle}>Some words to say...</h3>
-          <p className={styles.text}>
-            I'm a front-end developer building user interfaces using React.
-          </p>
-          <p className={styles.text}>
-            I'm well organized, motivated, team oriented and constantly working
-            to improve my professional skills. I pay attention to detail, but
-            without excessive perfectionism when it hurts development speed.
-          </p>
-          <p className={styles.text}>
-            Interested in working on ambitious projects on an up-to-date
-            technology stack with colleagues with extensive experience in
-            front-end development who enjoy sharing their knowledge.
-          </p>
-          <a className={styles.link} href="/files/resume.pdf" download>
-            Download Resume
+          <h3 className={styles.subtitle}>{aboutText[language].subtitle}</h3>
+          {aboutText[language].text.map((item, index) => {
+            return (
+              <p key={index} className={styles.text}>
+                {item}
+              </p>
+            );
+          })}
+          <a
+            className={styles.link}
+            href={aboutText[language].link.path}
+            download
+          >
+            {aboutText[language].link.text}
           </a>
         </div>
       </Container>

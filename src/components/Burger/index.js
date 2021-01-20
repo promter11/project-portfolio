@@ -3,14 +3,14 @@ import { CSSTransition } from "react-transition-group";
 
 import styles from "./Burger.module.scss";
 
-const Burger = ({ active, onSetActive }) => {
+const Burger = ({ status, onToggleStatus }) => {
   return (
-    <ul className={styles.burger} onClick={() => onSetActive(!active)}>
+    <ul className={styles.burger} onClick={() => onToggleStatus()}>
       {Array.from({ length: 3 }).map((item, index) => {
         return (
           <CSSTransition
             key={index}
-            in={active}
+            in={status}
             timeout={300}
             classNames={{
               enter: styles.itemEnter,

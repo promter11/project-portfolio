@@ -60,9 +60,9 @@ const Carousel = ({ slides }) => {
           </button>
         </div>
       </div>
-      {slides.map((slide, _) => {
+      {slides.map((slide, index) => {
         return (
-          <SwiperSlide className={styles.slide} key={slide.id}>
+          <SwiperSlide className={styles.slide} key={index}>
             <Slide {...slide} />
           </SwiperSlide>
         );

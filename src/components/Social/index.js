@@ -5,9 +5,9 @@ import styles from "./Social.module.scss";
 const Social = ({ socials }) => {
   return (
     <div className={styles.social}>
-      {socials.map(({ id, path, component }, _) => {
+      {socials.map(({ path, component }, index) => {
         return (
-          <a key={id} className={styles.link} href={path}>
+          <a key={index} className={styles.link} href={path}>
             {createElement(component, { className: styles.icon }, null)}
           </a>
         );

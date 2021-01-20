@@ -14,7 +14,7 @@ const Slide = ({
   fullDescription,
   technologies,
   image,
-  path,
+  link: { text, path },
 }) => {
   const { visible, showModal, RenderModal } = useModal();
 
@@ -67,7 +67,7 @@ const Slide = ({
                 })}
               </ul>
               <a className={modalStyles.modalLink} href={path}>
-                See more
+                {text}
               </a>
             </div>
           </div>

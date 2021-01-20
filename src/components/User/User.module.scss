@@ -13,7 +13,7 @@
   }
 
   .title {
-    text-transform: uppercase;
+    @include text(1.6rem, 900, 150%, uppercase);
   }
 
   .position {

@@ -1,21 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Heading from "../../components/Heading";
 import Container from "../../components/Container";
+
+import { noMatchText } from "../../common/jsonText/noMatchText";
+import { loadState } from "../../common/localStorage";
 
 import styles from "./NoMatch.module.scss";
 
 const NoMatch = () => {
+  const {
+    LanguageReducer: {
+      defaultLanguage: { language },
+    },
+  } = loadState();
+
   return (
     <section className={styles.noMatch}>
       <Container>
-        <h1 className={styles.title}>Page not found</h1>
-        <p className={styles.text}>
-          The page you were looking for could not be found. It might have been
-          removed, renamed, or did not exist in the first place.
-        </p>
-        <Link className={styles.link} to="/">
-          Homepage
+        <Heading className={styles.title} level={1}>
+          {noMatchText[language].title}
+        </Heading>
+        <p className={styles.text}>{noMatchText[language].desc}</p>
+        <Link className={styles.link} to={noMatchText[language].link.path}>
+          {noMatchText[language].link.text}
         </Link>
       </Container>
     </section>

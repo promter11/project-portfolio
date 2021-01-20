@@ -15,7 +15,7 @@ const initialState = {
       icon: RussiaFlag,
     },
     {
-      language: "UK",
+      language: "EN",
       icon: EnglandFlag,
     },
   ],

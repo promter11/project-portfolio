@@ -1,59 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { CSSTransition } from "react-transition-group";
 
 import User from "../User";
-import Burger from "../Burger";
 import Menu from "../Menu";
 import Social from "../Social";
+import Burger from "../Burger";
 import Language from "../../containers/Language";
 
-import Avatar from "../../assets/images/Avatar.jpg";
-import Home from "../../assets/icons/aside/home.svg";
-import About from "../../assets/icons/aside/about.svg";
-import Skills from "../../assets/icons/aside/skills.svg";
-import Portfolio from "../../assets/icons/aside/portfolio.svg";
-import Contact from "../../assets/icons/aside/contact.svg";
-import { ReactComponent as Telegram } from "../../assets/icons/aside/telegram.svg";
-import { ReactComponent as Github } from "../../assets/icons/aside/github.svg";
-import { ReactComponent as Email } from "../../assets/icons/aside/email.svg";
+import { sidebarText } from "../../common/jsonText/sidebarText";
+import { loadState } from "../../common/localStorage";
+
 import styles from "./Sidebar.module.scss";
 
-const initialUserState = {
-  name: "Alexander Samylin",
-  position: "Front-End Developer",
-  avatar: Avatar,
-};
-const initialMenuState = [
-  { id: 0, title: "Home", path: "/", icon: Home },
-  { id: 1, title: "About", path: "/about", icon: About },
-  { id: 2, title: "Skills", path: "/skills", icon: Skills },
-  { id: 3, title: "Portfolio", path: "/portfolio", icon: Portfolio },
-  { id: 4, title: "Contact", path: "/contact", icon: Contact },
-];
-const initialSocialState = [
-  {
-    id: 0,
-    path: "https://t.me/darklurkerrr",
-    component: Telegram,
-  },
-  {
-    id: 1,
-    path: "https://github.com/promter11",
-    component: Github,
-  },
-  {
-    id: 2,
-    path: "mailto:promter11@gmail.com",
-    component: Email,
-  },
-];
+const Sidebar = ({ state, actions }) => {
+  const {
+    LanguageReducer: {
+      defaultLanguage: { language },
+    },
+  } = loadState();
 
-const Sidebar = () => {
-  const [active, setActive] = useState(false);
+  const { status } = state;
+  const { toggleStatus } = actions;
 
   return (
     <CSSTransition
-      in={active}
+      in={status}
       timeout={0}
       classNames={{
         enter: styles.sidebarEnter,
@@ -65,12 +36,12 @@ const Sidebar = () => {
       }}
     >
       <aside className={styles.sidebar}>
-        <Burger active={active} onSetActive={setActive} />
-        <User {...initialUserState} />
-        <Menu items={initialMenuState} />
+        <Burger status={status} onToggleStatus={toggleStatus} />
+        <User {...sidebarText[language].user} />
+        <Menu items={sidebarText[language].menu} />
         <div className={styles.wrapper}>
           <Language />
-          <Social socials={initialSocialState} />
+          <Social socials={sidebarText[language].social} />
         </div>
       </aside>
     </CSSTransition>
