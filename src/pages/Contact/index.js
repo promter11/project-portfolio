@@ -6,17 +6,10 @@ import Info from "../../components/Info";
 import Form from "../../components/Form";
 
 import { contactText } from "../../common/jsonText/contactText";
-import { loadState } from "../../common/localStorage";
 
 import styles from "./Contact.module.scss";
 
-const Contact = () => {
-  const {
-    LanguageReducer: {
-      defaultLanguage: { language },
-    },
-  } = loadState();
-
+const Contact = ({ language }) => {
   return (
     <section className={styles.contact}>
       <Container>

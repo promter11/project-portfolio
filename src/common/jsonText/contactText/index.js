@@ -5,7 +5,7 @@ import Email from "../../../assets/icons/contact/email.svg";
 export const contactText = {
   RU: {
     title: "Контакты",
-    subtitle: "Будем на связи",
+    subtitle: "Давайте оставаться на связи",
     blocks: {
       left: {
         title: "Контактные данные",
@@ -29,8 +29,8 @@ export const contactText = {
       right: {
         title: "Отправьте мне сообщение",
         form: {
-          name: "Ваше имя",
-          email: "Адрес электронной почты",
+          name: "Имя",
+          email: "Электронная почта",
           message: "Сообщение",
           submit: "Отправить",
         },

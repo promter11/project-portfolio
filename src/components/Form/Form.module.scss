@@ -60,7 +60,6 @@
   }
 
   .submit {
-    @include button(6rem, -6rem, $white-color, $contact-block-color);
-    font-weight: bold;
+    @include button($white-color, $black-color);
   }
 }

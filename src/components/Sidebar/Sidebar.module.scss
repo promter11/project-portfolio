@@ -5,12 +5,23 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 5;
   @include flex(nowrap, column, space-between, inherit);
   @include width-height(32rem, 100vh);
   padding: 4rem;
-  font-family: "Open Sans", sans-serif;
   background-color: $sidebar-background-color;
+
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    @include width-height(100vw, 100vh);
+    visibility: hidden;
+    opacity: 0;
+    background-color: $black-color;
+  }
 
   @media (max-width: 576px) {
     width: 28rem;
@@ -28,11 +39,20 @@
   &.sidebarExitActive,
   &.sidebarExitDone {
     transition: left 300ms;
+
+    &:before {
+      transition: opacity 300ms;
+    }
   }
 
   &.sidebarEnter,
   &.sidebarExitActive,
   &.sidebarExitDone {
+    &:before {
+      visibility: hidden;
+      opacity: 0;
+    }
+
     @media (max-width: 576px) {
       left: -28rem;
     }
@@ -45,6 +65,16 @@
   &.sidebarEnterActive,
   &.sidebarEnterDone,
   &.sidebarExit {
+    &:before {
+      visibility: visible;
+      opacity: 0.5;
+
+      @media (min-width: 993px) {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
     @media (max-width: 992px) {
       left: 0;
     }

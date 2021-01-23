@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import Slide from "../Slide";
 
+import Prev from "../../assets/icons/portfolio/arrow-left.svg";
+import Next from "../../assets/icons/portfolio/arrow-right.svg";
 import "swiper/swiper.scss";
 import styles from "./Carousel.module.scss";
 
@@ -53,10 +55,10 @@ const Carousel = ({ slides }) => {
         </div>
         <div className={styles.inner}>
           <button className={styles.button} ref={prevRef}>
-            Prev
+            <img className={styles.icon} src={Prev} alt="Prev" />
           </button>
           <button className={styles.button} ref={nextRef}>
-            Next
+            <img className={styles.icon} src={Next} alt="Next" />
           </button>
         </div>
       </div>

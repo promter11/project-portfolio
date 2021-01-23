@@ -1,13 +1,18 @@
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
+import { getSidebarStatus } from "../../store/selectors/SidebarSelectors";
+import { getLanguage } from "../../store/selectors/LanguageSelectors";
 import * as SidebarActions from "../../store/actions/SidebarActions";
 
 import Sidebar from "../../components/Sidebar";
 
 const mapStateToProps = (state) => {
   return {
-    state: state.SidebarReducer,
+    state: {
+      status: getSidebarStatus(state),
+      language: getLanguage(state),
+    },
   };
 };
 

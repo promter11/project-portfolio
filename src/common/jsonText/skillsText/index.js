@@ -60,7 +60,7 @@ export const skillsText = {
             image: Bootstrap,
           },
           {
-            title: "BEM",
+            title: "БЭМ",
             text:
               "Методология веб-разработки, а также набор интерфейсных библиотек, фреймворков и вспомогательных инструментов",
             image: BEM,

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Sidebar from "../../containers/Sidebar";
-import Content from "../Content";
+import Content from "../../containers/Content";
 
 import styles from "./App.module.scss";
 

@@ -8,18 +8,11 @@ import Burger from "../Burger";
 import Language from "../../containers/Language";
 
 import { sidebarText } from "../../common/jsonText/sidebarText";
-import { loadState } from "../../common/localStorage";
 
 import styles from "./Sidebar.module.scss";
 
 const Sidebar = ({ state, actions }) => {
-  const {
-    LanguageReducer: {
-      defaultLanguage: { language },
-    },
-  } = loadState();
-
-  const { status } = state;
+  const { status, language } = state;
   const { toggleStatus } = actions;
 
   return (

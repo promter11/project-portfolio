@@ -39,7 +39,7 @@
     }
 
     .link {
-      @include button(10.2rem, -10.2rem, $black-color, $white-color);
+      @include button($black-color, $white-color);
     }
   }
 }

@@ -4,10 +4,10 @@ import Routes from "../../routes";
 
 import styles from "./Content.module.scss";
 
-const Content = () => {
+const Content = ({ language }) => {
   return (
     <main className={styles.main}>
-      <Routes />
+      <Routes language={language} />
     </main>
   );
 };

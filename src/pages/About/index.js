@@ -4,17 +4,10 @@ import Heading from "../../components/Heading";
 import Container from "../../components/Container";
 
 import { aboutText } from "../../common/jsonText/aboutText";
-import { loadState } from "../../common/localStorage";
 
 import styles from "./About.module.scss";
 
-const About = () => {
-  const {
-    LanguageReducer: {
-      defaultLanguage: { language },
-    },
-  } = loadState();
-
+const About = ({ language }) => {
   return (
     <section className={styles.about}>
       <Container>

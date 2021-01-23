@@ -18,24 +18,23 @@
   align-items: $align;
 }
 
-@mixin button($shadow-size, $shadow-size-reverse, $bg-color, $color) {
+@mixin button($bg-color, $color) {
   display: inline-block;
   flex-shrink: 0;
   padding: 1.5rem 3rem;
-  font-family: "Public Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 100%;
   text-transform: uppercase;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.1rem;
   border: 0.1rem solid $color;
-  transition: 0.5s;
+  transition: 0.5s ease;
   background-color: transparent;
   color: $color;
 
   &:hover {
-    box-shadow: inset $shadow-size 0 0 0 $color,
-      inset $shadow-size-reverse 0 0 0 $color;
+    box-shadow: inset 10.8rem 0 0 0 $color,
+      inset -10.8rem 0 0 0 $color;
     background-color: transparent;
     color: $bg-color;
   }

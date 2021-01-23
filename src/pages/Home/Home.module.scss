@@ -9,8 +9,13 @@
     center center / cover;
 
   .title {
+    max-width: 67rem;
     margin-bottom: 2rem;
     text-shadow: 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 576px) {
+      max-width: 47rem;
+    }
   }
 
   .desc {
@@ -19,6 +24,6 @@
   }
 
   .link {
-    @include button(7.6rem, -7.6rem, $black-color, $white-color);
+    @include button($black-color, $white-color);
   }
 }

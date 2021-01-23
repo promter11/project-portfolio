@@ -8,26 +8,26 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import NoMatch from "./pages/NoMatch";
 
-const Routes = () => {
+const Routes = ({ language }) => {
   return (
     <Switch>
       <Route path="/" exact>
-        <Home />
+        <Home language={language} />
       </Route>
       <Route path="/about">
-        <About />
+        <About language={language} />
       </Route>
       <Route path="/skills">
-        <Skills />
+        <Skills language={language} />
       </Route>
       <Route path="/portfolio">
-        <Portfolio />
+        <Portfolio language={language} />
       </Route>
       <Route path="/contact">
-        <Contact />
+        <Contact language={language} />
       </Route>
       <Route path="*">
-        <NoMatch />
+        <NoMatch language={language} />
       </Route>
     </Switch>
   );

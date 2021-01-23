@@ -5,17 +5,10 @@ import Container from "../../components/Container";
 import Carousel from "../../components/Carousel";
 
 import { portfolioText } from "../../common/jsonText/portfolioText";
-import { loadState } from "../../common/localStorage";
 
 import styles from "./Portfolio.module.scss";
 
-const Portfolio = () => {
-  const {
-    LanguageReducer: {
-      defaultLanguage: { language },
-    },
-  } = loadState();
-
+const Portfolio = ({ language }) => {
   return (
     <section className={styles.portfolio}>
       <Container>

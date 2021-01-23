@@ -8,9 +8,9 @@
   text-align: center;
 
   .title {
-    max-width: 47rem;
+    max-width: 52rem;
     margin: 0 auto 2rem auto;
-    @include text(7.8rem, 900, 150%, capitalize);
+    @include text(7.8rem, 900, 125%, none);
     color: $black-color;
   }
 

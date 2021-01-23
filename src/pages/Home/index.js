@@ -5,17 +5,10 @@ import Container from "../../components/Container";
 import Heading from "../../components/Heading";
 
 import { homeText } from "../../common/jsonText/homeText";
-import { loadState } from "../../common/localStorage";
 
 import styles from "./Home.module.scss";
 
-const Home = () => {
-  const {
-    LanguageReducer: {
-      defaultLanguage: { language },
-    },
-  } = loadState();
-
+const Home = ({ language }) => {
   return (
     <section className={styles.home}>
       <Container>

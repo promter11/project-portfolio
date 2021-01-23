@@ -1,120 +1,43 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/OpenSans/OpenSans-Light.eot");
-  src: url("../assets/fonts/OpenSans/OpenSans-Light.eot?#iefix")
+  font-family: "Museo Sans";
+  src: url("../assets/fonts/MuseoSans/MuseoSans-100.eot");
+  src: url("../assets/fonts/MuseoSans/MuseoSans-100.eot?#iefix")
   format("embedded-opentype"),
-  url("../assets/fonts/OpenSans/OpenSans-Light.woff") format("woff"),
-  url("../assets/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  url("../assets/fonts/MuseoSans/MuseoSans-100.woff") format("woff"),
+  url("../assets/fonts/MuseoSans/MuseoSans-100.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  src: url("../assets/fonts/MuseoSans/MuseoSans-300.eot");
+  src: url("../assets/fonts/MuseoSans/MuseoSans-300.eot?#iefix")
+  format("embedded-opentype"),
+  url("../assets/fonts/MuseoSans/MuseoSans-300.woff") format("woff"),
+  url("../assets/fonts/MuseoSans/MuseoSans-300.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/OpenSans/OpenSans-Bold.eot");
-  src: url("../assets/fonts/OpenSans/OpenSans-Bold.eot?#iefix")
+  font-family: "Museo Sans";
+  src: url("../assets/fonts/MuseoSans/MuseoSans-700.eot");
+  src: url("../assets/fonts/MuseoSans/MuseoSans-700.eot?#iefix")
   format("embedded-opentype"),
-  url("../assets/fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
-  url("../assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  url("../assets/fonts/MuseoSans/MuseoSans-700.woff") format("woff"),
+  url("../assets/fonts/MuseoSans/MuseoSans-700.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/OpenSans/OpenSans-ExtraBold.eot");
-  src: url("../assets/fonts/OpenSans/OpenSans-ExtraBold.eot?#iefix")
+  font-family: "Museo Sans";
+  src: url("../assets/fonts/MuseoSans/MuseoSans-900.eot");
+  src: url("../assets/fonts/MuseoSans/MuseoSans-900.eot?#iefix")
   format("embedded-opentype"),
-  url("../assets/fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff"),
-  url("../assets/fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Public Sans";
-  src: url("../assets/fonts/PublicSans/PublicSans-Thin.eot");
-  src: url("../assets/fonts/PublicSans/PublicSans-Thin.eot?#iefix")
-  format("embedded-opentype"),
-  url("../assets/fonts/PublicSans/PublicSans-Thin.woff") format("woff"),
-  url("../assets/fonts/PublicSans/PublicSans-Thin.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Public Sans";
-  src: url("../assets/fonts/PublicSans/PublicSans-Light.eot");
-  src: url("../assets/fonts/PublicSans/PublicSans-Light.eot?#iefix")
-  format("embedded-opentype"),
-  url("../assets/fonts/PublicSans/PublicSans-Light.woff") format("woff"),
-  url("../assets/fonts/PublicSans/PublicSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Public Sans";
-  src: url("../assets/fonts/PublicSans/PublicSans-Regular.eot");
-  src: url("../assets/fonts/PublicSans/PublicSans-Regular.eot?#iefix")
-  format("embedded-opentype"),
-  url("../assets/fonts/PublicSans/PublicSans-Regular.woff") format("woff"),
-  url("../assets/fonts/PublicSans/PublicSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Public Sans";
-  src: url("../assets/fonts/PublicSans/PublicSans-Medium.eot");
-  src: url("../assets/fonts/PublicSans/PublicSans-Medium.eot?#iefix")
-  format("embedded-opentype"),
-  url("../assets/fonts/PublicSans/PublicSans-Medium.woff") format("woff"),
-  url("../assets/fonts/PublicSans/PublicSans-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Public Sans";
-  src: url("../assets/fonts/PublicSans/PublicSans-SemiBold.eot");
-  src: url("../assets/fonts/PublicSans/PublicSans-SemiBold.eot?#iefix")
-  format("embedded-opentype"),
-  url("../assets/fonts/PublicSans/PublicSans-SemiBold.woff") format("woff"),
-  url("../assets/fonts/PublicSans/PublicSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Public Sans";
-  src: url("../assets/fonts/PublicSans/PublicSans-Bold.eot");
-  src: url("../assets/fonts/PublicSans/PublicSans-Bold.eot?#iefix")
-  format("embedded-opentype"),
-  url("../assets/fonts/PublicSans/PublicSans-Bold.woff") format("woff"),
-  url("../assets/fonts/PublicSans/PublicSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Public Sans";
-  src: url("../assets/fonts/PublicSans/PublicSans-ExtraBold.eot");
-  src: url("../assets/fonts/PublicSans/PublicSans-ExtraBold.eot?#iefix")
-  format("embedded-opentype"),
-  url("../assets/fonts/PublicSans/PublicSans-ExtraBold.woff") format("woff"),
-  url("../assets/fonts/PublicSans/PublicSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Public Sans";
-  src: url("../assets/fonts/PublicSans/PublicSans-Black.eot");
-  src: url("../assets/fonts/PublicSans/PublicSans-Black.eot?#iefix")
-  format("embedded-opentype"),
-  url("../assets/fonts/PublicSans/PublicSans-Black.woff") format("woff"),
-  url("../assets/fonts/PublicSans/PublicSans-Black.ttf") format("truetype");
+  url("../assets/fonts/MuseoSans/MuseoSans-900.woff") format("woff"),
+  url("../assets/fonts/MuseoSans/MuseoSans-900.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }

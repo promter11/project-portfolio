@@ -1,0 +1,37 @@
+@import "../../styles/_variables";
+@import "../../styles/_mixins";
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  @include width-height(100vw, 100vh);
+  background: $black-color;
+
+  .block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include flex(nowrap, row, center, center);
+    animation: blur-text 2s infinite linear alternate;
+
+    .letter {
+      display: inline-block;
+      margin: 0 0.5rem;
+      color: $white-color;
+    }
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0);
+  }
+
+  100% {
+    filter: blur(0.4rem);
+  }
+}

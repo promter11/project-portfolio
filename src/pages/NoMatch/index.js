@@ -5,17 +5,10 @@ import Heading from "../../components/Heading";
 import Container from "../../components/Container";
 
 import { noMatchText } from "../../common/jsonText/noMatchText";
-import { loadState } from "../../common/localStorage";
 
 import styles from "./NoMatch.module.scss";
 
-const NoMatch = () => {
-  const {
-    LanguageReducer: {
-      defaultLanguage: { language },
-    },
-  } = loadState();
-
+const NoMatch = ({ language }) => {
   return (
     <section className={styles.noMatch}>
       <Container>

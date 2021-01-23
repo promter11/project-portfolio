@@ -4,17 +4,10 @@ import Heading from "../../components/Heading";
 import Container from "../../components/Container";
 
 import { skillsText } from "../../common/jsonText/skillsText";
-import { loadState } from "../../common/localStorage";
 
 import styles from "./Skills.module.scss";
 
-const Skills = () => {
-  const {
-    LanguageReducer: {
-      defaultLanguage: { language },
-    },
-  } = loadState();
-
+const Skills = ({ language }) => {
   return (
     <section className={styles.skills}>
       <Container>
