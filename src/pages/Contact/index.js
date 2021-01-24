@@ -3,7 +3,7 @@ import React from "react";
 import Heading from "../../components/Heading";
 import Container from "../../components/Container";
 import Info from "../../components/Info";
-import Form from "../../components/Form";
+import ContactForm from "../../components/ContactForm";
 
 import { contactText } from "../../common/jsonText/contactText";
 
@@ -31,7 +31,7 @@ const Contact = ({ language }) => {
               <h3 className={`${styles.blockTitle} ${styles.black}`}>
                 {contactText[language].blocks.right.title}
               </h3>
-              <Form />
+              <ContactForm language={language} />
             </div>
           </div>
         </div>

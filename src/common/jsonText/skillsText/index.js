@@ -161,7 +161,7 @@ export const skillsText = {
       },
     ],
     desc:
-      "* И другие популярные технологии, такие как React Router, Styled Components, Redux Form, React Transition Group и другие.",
+      "* И другие популярные технологии, такие как React Router, Styled Components, Redux ContactForm, React Transition Group и другие.",
   },
   EN: {
     title: "Skills",
@@ -301,6 +301,6 @@ export const skillsText = {
       },
     ],
     desc:
-      "* And other popular technologies like React Router, Styled Components, Redux Form, React Transition Group and others.",
+      "* And other popular technologies like React Router, Styled Components, Redux ContactForm, React Transition Group and others.",
   },
 };

@@ -15,16 +15,8 @@
 
 %section-styles {
   height: 100%;
-  padding: 8rem calc(15.5rem - 1.5rem);
+  padding: 8rem 0;
   background-blend-mode: darken;
-
-  @media (max-width: 768px) {
-    padding: 8rem 0;
-  }
-
-  @media (min-width: 769px) and (max-width: 1200px) {
-    padding: 8rem calc(11.5rem - 1.5rem);
-  }
 }
 
 %block-grid {

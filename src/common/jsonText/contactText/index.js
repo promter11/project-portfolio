@@ -33,6 +33,11 @@ export const contactText = {
           email: "Электронная почта",
           message: "Сообщение",
           submit: "Отправить",
+          errors: {
+            required: "Поле обязательно для заполнения.",
+            maxLength: "Поле содержит слишком большое количество символов.",
+            checkEmail: "Пожалуйста, проверьте корректность email адреса.",
+          },
         },
       },
     },
@@ -67,6 +72,11 @@ export const contactText = {
           email: "E-Mail",
           message: "Message",
           submit: "Submit",
+          errors: {
+            required: "Field is required.",
+            maxLength: "Field contains too many characters.",
+            checkEmail: "Please check the email address is correct.",
+          },
         },
       },
     },

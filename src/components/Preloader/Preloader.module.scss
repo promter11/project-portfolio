@@ -7,7 +7,18 @@
   left: 0;
   z-index: 10;
   @include width-height(100vw, 100vh);
+  transition: opacity 1s ease;
   background: $black-color;
+
+  &.enter,
+  &.exitActive {
+    opacity: 1;
+  }
+
+  &.exit,
+  &.enterActive {
+    opacity: 0;
+  }
 
   .block {
     position: absolute;
