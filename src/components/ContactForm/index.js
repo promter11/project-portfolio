@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { Form, Field } from "react-final-form";
 
 import { contactText } from "../../common/jsonText/contactText";
@@ -8,7 +9,7 @@ import styles from "./ContactForm.module.scss";
 const composeValidators = (...validators) => (value) =>
   validators.reduce((error, validator) => error || validator(value), undefined);
 
-const onSubmit = (values) => console.log(JSON.stringify(values));
+const onSubmit = (values) => axios.post("/send/", values);
 
 const ContactForm = ({ language }) => {
   const required = (value) =>
