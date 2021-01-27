@@ -1,4 +1,5 @@
 import React from "react";
+import { string } from "prop-types";
 
 import Routes from "../../routes";
 
@@ -10,6 +11,10 @@ const Content = ({ language }) => {
       <Routes language={language} />
     </main>
   );
+};
+
+Content.propTypes = {
+  language: string,
 };
 
 export default Content;

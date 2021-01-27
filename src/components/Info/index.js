@@ -1,4 +1,5 @@
 import React from "react";
+import { string, arrayOf, shape } from "prop-types";
 
 import styles from "./Info.module.scss";
 
@@ -21,6 +22,16 @@ const Info = ({ items }) => {
       })}
     </div>
   );
+};
+
+Info.propTypes = {
+  items: arrayOf(
+    shape({
+      image: string,
+      path: string,
+      value: string,
+    })
+  ),
 };
 
 export default Info;

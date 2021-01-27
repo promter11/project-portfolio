@@ -1,4 +1,5 @@
 import React, { createElement } from "react";
+import { string, any, arrayOf, shape } from "prop-types";
 
 import styles from "./Social.module.scss";
 
@@ -14,6 +15,15 @@ const Social = ({ socials }) => {
       })}
     </div>
   );
+};
+
+Social.propTypes = {
+  socials: arrayOf(
+    shape({
+      path: string,
+      component: any,
+    })
+  ),
 };
 
 export default Social;

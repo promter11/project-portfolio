@@ -1,4 +1,5 @@
 import React from "react";
+import { bool } from "prop-types";
 import { CSSTransition } from "react-transition-group";
 
 import styles from "./Preloader.module.scss";
@@ -29,6 +30,10 @@ const Preloader = ({ loading }) => {
       </div>
     </CSSTransition>
   );
+};
+
+Preloader.propTypes = {
+  loading: bool,
 };
 
 export default Preloader;

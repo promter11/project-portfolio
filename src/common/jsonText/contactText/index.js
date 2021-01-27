@@ -41,6 +41,10 @@ export const contactText = {
         },
       },
     },
+    modal: {
+      title: "Спасибо!",
+      text: "Ваше сообщение успешно отправлено.",
+    },
   },
   EN: {
     title: "Contact",
@@ -79,6 +83,10 @@ export const contactText = {
           },
         },
       },
+    },
+    modal: {
+      title: "Thank you!",
+      text: "Your message has been successfully delivered.",
     },
   },
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { string, bool, func, shape } from "prop-types";
 import { CSSTransition } from "react-transition-group";
 
 import User from "../User";
@@ -31,7 +32,10 @@ const Sidebar = ({ state, actions }) => {
       <aside className={styles.sidebar}>
         <Burger status={status} onToggleStatus={toggleStatus} />
         <User {...sidebarText[language].user} />
-        <Menu items={sidebarText[language].menu} />
+        <Menu
+          items={sidebarText[language].menu}
+          onToggleStatus={toggleStatus}
+        />
         <div className={styles.wrapper}>
           <Language />
           <Social socials={sidebarText[language].social} />
@@ -39,6 +43,16 @@ const Sidebar = ({ state, actions }) => {
       </aside>
     </CSSTransition>
   );
+};
+
+Sidebar.propTypes = {
+  state: shape({
+    status: bool,
+    language: string,
+  }),
+  actions: shape({
+    toggleStatus: func,
+  }),
 };
 
 export default Sidebar;

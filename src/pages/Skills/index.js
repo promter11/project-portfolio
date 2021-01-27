@@ -18,13 +18,17 @@ const Skills = ({ language }) => {
           {skillsText[language].content.map(({ title, items }, index) => {
             return (
               <div className={styles.contentBlock} key={index}>
-                <h2 className={styles.contentTitle}>{title}</h2>
+                <Heading className={styles.contentTitle} level={2}>
+                  {title}
+                </Heading>
                 <div className={styles.wrapper}>
                   {items.map(({ title, text, image }, index) => {
                     return (
                       <div key={index} className={styles.block}>
                         <img className={styles.image} src={image} alt={title} />
-                        <h3 className={styles.blockTitle}>{title}</h3>
+                        <Heading className={styles.blockTitle} level={3}>
+                          {title}
+                        </Heading>
                         <p className={styles.text}>{text}</p>
                       </div>
                     );

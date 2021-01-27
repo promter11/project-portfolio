@@ -1,4 +1,5 @@
 import React from "react";
+import { bool, func } from "prop-types";
 import { CSSTransition } from "react-transition-group";
 
 import styles from "./Burger.module.scss";
@@ -27,6 +28,11 @@ const Burger = ({ status, onToggleStatus }) => {
       })}
     </ul>
   );
+};
+
+Burger.propTypes = {
+  status: bool,
+  onToggleStatus: func,
 };
 
 export default Burger;

@@ -1,4 +1,5 @@
 import React from "react";
+import { string, bool, func, arrayOf, shape } from "prop-types";
 import { CSSTransition } from "react-transition-group";
 
 import Arrow from "../../assets/icons/aside/arrow-down.svg";
@@ -64,6 +65,26 @@ const Language = ({ state, actions }) => {
       </CSSTransition>
     </div>
   );
+};
+
+Language.propTypes = {
+  state: shape({
+    toggle: bool,
+    defaultLanguage: shape({
+      language: string,
+      icon: string,
+    }),
+    languagesList: arrayOf(
+      shape({
+        language: string,
+        icon: string,
+      })
+    ),
+  }),
+  actions: shape({
+    setToggle: func,
+    setLanguage: func,
+  }),
 };
 
 export default Language;

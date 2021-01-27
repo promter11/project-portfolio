@@ -15,7 +15,9 @@ const About = ({ language }) => {
           {aboutText[language].title}
         </Heading>
         <div className={styles.block}>
-          <h3 className={styles.subtitle}>{aboutText[language].subtitle}</h3>
+          <Heading className={styles.subtitle} level={3}>
+            {aboutText[language].subtitle}
+          </Heading>
           {aboutText[language].text.map((item, index) => {
             return (
               <p key={index} className={styles.text}>

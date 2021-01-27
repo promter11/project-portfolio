@@ -17,20 +17,23 @@ const Contact = ({ language }) => {
           {contactText[language].title}
         </Heading>
         <div className={styles.content}>
-          <h2 className={styles.contentTitle}>
+          <Heading className={styles.contentTitle} level={2}>
             {contactText[language].subtitle}
-          </h2>
+          </Heading>
           <div className={styles.wrapper}>
             <div className={`${styles.block} ${styles.blue}`}>
-              <h3 className={styles.blockTitle}>
+              <Heading className={styles.blockTitle} level={3}>
                 {contactText[language].blocks.left.title}
-              </h3>
+              </Heading>
               <Info items={contactText[language].blocks.left.items} />
             </div>
             <div className={styles.block}>
-              <h3 className={`${styles.blockTitle} ${styles.black}`}>
+              <Heading
+                className={`${styles.blockTitle} ${styles.black}`}
+                level={3}
+              >
                 {contactText[language].blocks.right.title}
-              </h3>
+              </Heading>
               <ContactForm language={language} />
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { string, arrayOf, shape } from "prop-types";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -71,6 +72,23 @@ const Carousel = ({ slides }) => {
       })}
     </Swiper>
   );
+};
+
+Carousel.propTypes = {
+  slides: arrayOf(
+    shape({
+      title: string,
+      date: string,
+      description: string,
+      fullDescription: string,
+      technologies: arrayOf(string),
+      image: string,
+      link: shape({
+        text: string,
+        path: string,
+      }),
+    })
+  ),
 };
 
 export default Carousel;

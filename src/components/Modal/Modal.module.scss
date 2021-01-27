@@ -11,32 +11,27 @@
   @include flex(nowrap, row, center, center);
 
   &.modalEnter,
-  &.modalExitActive,
-  &.modalExitDone {
+  &.modalExitActive {
     .overlay {
       opacity: 0;
-      transition: opacity 300ms;
+      transition: opacity 0.5s ease;
     }
 
     .content {
       opacity: 0;
       transform: scale(0);
-      transition: opacity 300ms, transform 300ms;
+      transition: opacity 0.5s ease, transform 0.5s ease;
     }
   }
 
-  &.modalEnterActive,
-  &.modalEnterDone,
-  &.modalExit {
+  &.modalEnterActive {
     .overlay {
       opacity: 1;
-      transition: opacity 300ms;
     }
 
     .content {
       opacity: 1;
       transform: scale(1);
-      transition: opacity 300ms, transform 300ms;
     }
   }
 
@@ -60,6 +55,16 @@
 
       .icon {
         @include width-height(2rem, 2rem);
+      }
+    }
+
+    .modalInner {
+      padding: 4rem;
+      border-radius: 0.8rem;
+      background-color: $white-color;
+
+      .modalTitle {
+        margin-bottom: 2rem;
       }
     }
 
