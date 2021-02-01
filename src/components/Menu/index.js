@@ -33,8 +33,8 @@ Menu.propTypes = {
       path: string,
       icon: string,
     })
-  ),
-  onToggleStatus: func,
+  ).isRequired,
+  onToggleStatus: func.isRequired,
 };
 
 export default Menu;

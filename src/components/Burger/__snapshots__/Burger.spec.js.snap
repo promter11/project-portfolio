@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Burger component renders correctly with props 1`] = `
+<ul
+  className="burger"
+  onClick={[Function]}
+>
+  <CSSTransition
+    classNames={
+      Object {
+        "enter": "itemEnter",
+        "enterActive": "itemEnterActive",
+        "enterDone": "itemEnterDone",
+        "exit": "itemExitActive",
+        "exitActive": "itemExitActive",
+        "exitDone": "itemExitDone",
+      }
+    }
+    in={false}
+    key="0"
+    timeout={300}
+  >
+    <li
+      className="item"
+    />
+  </CSSTransition>
+  <CSSTransition
+    classNames={
+      Object {
+        "enter": "itemEnter",
+        "enterActive": "itemEnterActive",
+        "enterDone": "itemEnterDone",
+        "exit": "itemExitActive",
+        "exitActive": "itemExitActive",
+        "exitDone": "itemExitDone",
+      }
+    }
+    in={false}
+    key="1"
+    timeout={300}
+  >
+    <li
+      className="item"
+    />
+  </CSSTransition>
+  <CSSTransition
+    classNames={
+      Object {
+        "enter": "itemEnter",
+        "enterActive": "itemEnterActive",
+        "enterDone": "itemEnterDone",
+        "exit": "itemExitActive",
+        "exitActive": "itemExitActive",
+        "exitDone": "itemExitDone",
+      }
+    }
+    in={false}
+    key="2"
+    timeout={300}
+  >
+    <li
+      className="item"
+    />
+  </CSSTransition>
+</ul>
+`;

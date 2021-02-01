@@ -31,7 +31,7 @@ Info.propTypes = {
       path: string,
       value: string,
     })
-  ),
+  ).isRequired,
 };
 
 export default Info;

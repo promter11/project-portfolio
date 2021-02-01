@@ -10,10 +10,12 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(
+    const timer = setTimeout(
       () => setLoading((value) => !value),
       (Math.random() * (3 - 1) + 1) * 1000
     );
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (

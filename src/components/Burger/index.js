@@ -31,8 +31,8 @@ const Burger = ({ status, onToggleStatus }) => {
 };
 
 Burger.propTypes = {
-  status: bool,
-  onToggleStatus: func,
+  status: bool.isRequired,
+  onToggleStatus: func.isRequired,
 };
 
 export default Burger;

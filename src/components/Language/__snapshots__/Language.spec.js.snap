@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Language component renders correctly with props 1`] = `
+<div
+  className="language"
+>
+  <div
+    className="block"
+  >
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      <div
+        className="wrapper"
+      >
+        <img
+          alt="RU"
+          className="icon"
+          src="C:/path"
+        />
+      </div>
+      <div
+        className="wrapper"
+      >
+        <CSSTransition
+          classNames={
+            Object {
+              "enter": "arrowEnter",
+              "enterActive": "arrowEnterActive",
+              "enterDone": "arrowEnterDone",
+              "exit": "arrowExit",
+              "exitActive": "arrowExitActive",
+              "exitDone": "arrowExitDone",
+            }
+          }
+          in={false}
+          timeout={300}
+        >
+          <img
+            alt="Arrow"
+            className="arrow"
+            src="arrow-down.svg"
+          />
+        </CSSTransition>
+      </div>
+    </button>
+  </div>
+  <CSSTransition
+    classNames={
+      Object {
+        "enter": "languageEnter",
+        "enterActive": "languageEnterActive",
+        "exit": "languageExit",
+      }
+    }
+    in={false}
+    timeout={300}
+    unmountOnExit={true}
+  >
+    <div
+      className="hidden"
+    >
+      <button
+        className="button"
+        key="0"
+        onClick={[Function]}
+        type="button"
+      >
+        <img
+          alt="RU"
+          className="icon"
+          src="C:/RussianFlag/Icon"
+        />
+      </button>
+      <button
+        className="button"
+        key="1"
+        onClick={[Function]}
+        type="button"
+      >
+        <img
+          alt="EN"
+          className="icon"
+          src="C:/UKFlag/Icon"
+        />
+      </button>
+    </div>
+  </CSSTransition>
+</div>
+`;

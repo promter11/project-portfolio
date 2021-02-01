@@ -1,7 +1,7 @@
 import { TOGGLE_STATUS } from "../../constants/SidebarConstants";
 
 const initialState = {
-  status: false,
+  sidebarStatus: false,
 };
 
 const SidebarReducer = (state = initialState, action) => {
@@ -11,7 +11,7 @@ const SidebarReducer = (state = initialState, action) => {
     case TOGGLE_STATUS:
       return {
         ...state,
-        status: !state.status,
+        sidebarStatus: !state.sidebarStatus,
       };
     default:
       return state;

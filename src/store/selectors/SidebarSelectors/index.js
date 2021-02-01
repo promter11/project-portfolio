@@ -1,1 +1,1 @@
-export const getSidebarStatus = (state) => state.SidebarReducer.status;
+export const getSidebarStatus = (state) => state.SidebarReducer.sidebarStatus;

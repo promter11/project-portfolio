@@ -13,12 +13,12 @@ import { sidebarText } from "../../common/jsonText/sidebarText";
 import styles from "./Sidebar.module.scss";
 
 const Sidebar = ({ state, actions }) => {
-  const { status, language } = state;
+  const { sidebarStatus, language } = state;
   const { toggleStatus } = actions;
 
   return (
     <CSSTransition
-      in={status}
+      in={sidebarStatus}
       timeout={0}
       classNames={{
         enter: styles.sidebarEnter,
@@ -30,7 +30,7 @@ const Sidebar = ({ state, actions }) => {
       }}
     >
       <aside className={styles.sidebar}>
-        <Burger status={status} onToggleStatus={toggleStatus} />
+        <Burger status={sidebarStatus} onToggleStatus={toggleStatus} />
         <User {...sidebarText[language].user} />
         <Menu
           items={sidebarText[language].menu}
@@ -47,7 +47,7 @@ const Sidebar = ({ state, actions }) => {
 
 Sidebar.propTypes = {
   state: shape({
-    status: bool,
+    sidebarStatus: bool,
     language: string,
   }),
   actions: shape({

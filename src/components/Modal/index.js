@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import { bool, func, node } from "prop-types";
 import { createPortal } from "react-dom";
 import { CSSTransition } from "react-transition-group";
@@ -8,10 +8,10 @@ import styles from "./Modal.module.scss";
 
 const modalRoot = document.getElementById("modal-root");
 
-const Modal = memo(({ children, visible, closeModal }) => {
+const Modal = ({ children, modalStatus, toggleModal }) => {
   return createPortal(
     <CSSTransition
-      in={visible}
+      in={modalStatus}
       timeout={500}
       classNames={{
         enter: styles.modalEnter,
@@ -21,9 +21,9 @@ const Modal = memo(({ children, visible, closeModal }) => {
       unmountOnExit
     >
       <div className={styles.modal}>
-        <div className={styles.overlay} onClick={closeModal} />
+        <div className={styles.overlay} onClick={toggleModal} />
         <div className={styles.content}>
-          <button className={styles.button} type="button" onClick={closeModal}>
+          <button className={styles.button} type="button" onClick={toggleModal}>
             <img className={styles.icon} src={Close} alt="Close" />
           </button>
           {children}
@@ -32,12 +32,12 @@ const Modal = memo(({ children, visible, closeModal }) => {
     </CSSTransition>,
     modalRoot
   );
-});
+};
 
 Modal.propTypes = {
   children: node,
-  visible: bool,
-  closeModal: func,
+  modalStatus: bool,
+  toggleModal: func,
 };
 
 export default Modal;

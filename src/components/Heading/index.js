@@ -8,7 +8,7 @@ const Heading = ({ children, className, level = 1 }) => {
 };
 
 Heading.propTypes = {
-  children: node,
+  children: node.isRequired,
   className: string,
   level: number,
 };

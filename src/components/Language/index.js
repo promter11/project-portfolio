@@ -80,11 +80,11 @@ Language.propTypes = {
         icon: string,
       })
     ),
-  }),
+  }).isRequired,
   actions: shape({
     setToggle: func,
     setLanguage: func,
-  }),
+  }).isRequired,
 };
 
 export default Language;

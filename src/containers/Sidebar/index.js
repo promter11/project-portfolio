@@ -10,7 +10,7 @@ import Sidebar from "../../components/Sidebar";
 const mapStateToProps = (state) => {
   return {
     state: {
-      status: getSidebarStatus(state),
+      sidebarStatus: getSidebarStatus(state),
       language: getLanguage(state),
     },
   };

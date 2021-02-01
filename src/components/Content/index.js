@@ -14,7 +14,7 @@ const Content = ({ language }) => {
 };
 
 Content.propTypes = {
-  language: string,
+  language: string.isRequired,
 };
 
 export default Content;

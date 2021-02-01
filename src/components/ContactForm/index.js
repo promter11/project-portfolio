@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { string } from "prop-types";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
@@ -15,7 +15,7 @@ const composeValidators = (...validators) => (value) =>
   validators.reduce((error, validator) => error || validator(value), undefined);
 
 const ContactForm = ({ language }) => {
-  const [visible, setVisible] = React.useState(false);
+  const [modalStatus, setModalStatus] = useState(false);
 
   const required = (value) =>
     value ? undefined : contactText[language].blocks.right.form.errors.required;
@@ -27,10 +27,11 @@ const ContactForm = ({ language }) => {
     pattern.test(value)
       ? undefined
       : contactText[language].blocks.right.form.errors.checkEmail;
+
   const onSubmit = (values) => {
     // axios.post("/send/", values);
 
-    setVisible((value) => !value);
+    setModalStatus((value) => !value);
   };
 
   return (
@@ -114,7 +115,10 @@ const ContactForm = ({ language }) => {
           </form>
         )}
       />
-      <Modal visible={visible} closeModal={() => setVisible((value) => !value)}>
+      <Modal
+        modalStatus={modalStatus}
+        toggleModal={() => setModalStatus((value) => !value)}
+      >
         <div className={modalStyles.modalInner}>
           <Heading className={modalStyles.modalTitle} level={2}>
             {contactText[language].modal.title}

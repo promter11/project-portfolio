@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu component renders correctly with props 1`] = `
+<nav
+  className="nav"
+>
+  <NavLink
+    activeClassName="active"
+    className="link"
+    exact={true}
+    key="0"
+    onClick={[Function]}
+    to="/"
+  >
+    <img
+      alt="Home"
+      className="icon"
+      src="C:/Front/Link"
+    />
+    <span
+      className="text"
+    >
+      Home
+    </span>
+  </NavLink>
+  <NavLink
+    activeClassName="active"
+    className="link"
+    exact={true}
+    key="1"
+    onClick={[Function]}
+    to="/about"
+  >
+    <img
+      alt="About"
+      className="icon"
+      src="C:/Front/Link/Icon"
+    />
+    <span
+      className="text"
+    >
+      About
+    </span>
+  </NavLink>
+</nav>
+`;

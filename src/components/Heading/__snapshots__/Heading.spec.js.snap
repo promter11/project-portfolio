@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component renders correctly with props 1`] = `
+<h2
+  className="k9Cds__Heading__1vt"
+>
+  Test
+</h2>
+`;
+
+exports[`Heading component renders correctly without props 1`] = `
+<h1>
+  Test
+</h1>
+`;

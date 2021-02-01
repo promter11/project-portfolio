@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info component renders correctly with items 1`] = `
+<div
+  className="info"
+>
+  <div
+    className="block"
+    key="0"
+  >
+    <img
+      alt="Info"
+      className="image"
+      src="C:/Development/Front"
+    />
+    <a
+      className="text"
+      href="/path"
+    >
+      Test
+    </a>
+  </div>
+  <div
+    className="block"
+    key="1"
+  >
+    <img
+      alt="Info"
+      className="image"
+      src="C:/Development/Front/Other"
+    />
+    <a
+      className="text"
+      href="/link"
+    >
+      Test 2
+    </a>
+  </div>
+  <div
+    className="block"
+    key="2"
+  >
+    <img
+      alt="Info"
+      className="image"
+      src="C:/Development/Front/NoLink"
+    />
+    <span
+      className="text"
+    >
+      Test 2
+    </span>
+  </div>
+</div>
+`;

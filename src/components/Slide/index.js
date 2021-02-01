@@ -1,4 +1,4 @@
-import React, { createElement } from "react";
+import React, { createElement, useState } from "react";
 import { string, arrayOf, shape } from "prop-types";
 
 import Heading from "../Heading";
@@ -17,7 +17,7 @@ const Slide = ({
   image,
   link: { text, path },
 }) => {
-  const [visible, setVisible] = React.useState(false);
+  const [modalStatus, setModalStatus] = useState(false);
 
   return (
     <div className={styles.slide}>
@@ -33,13 +33,16 @@ const Slide = ({
         <div className={styles.wrapper}>
           <button
             className={styles.button}
-            onClick={() => setVisible((value) => !value)}
+            onClick={() => setModalStatus((value) => !value)}
           >
             {createElement(Info, { className: styles.icon }, null)}
           </button>
         </div>
       </div>
-      <Modal visible={visible} closeModal={() => setVisible((value) => !value)}>
+      <Modal
+        modalStatus={modalStatus}
+        toggleModal={() => setModalStatus((value) => !value)}
+      >
         <div className={modalStyles.modalWrapper}>
           <div className={modalStyles.modalBlock}>
             <img className={modalStyles.modalImage} src={image} alt="Project" />
