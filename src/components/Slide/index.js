@@ -72,16 +72,16 @@ const Slide = ({
 };
 
 Slide.propTypes = {
-  title: string,
-  date: string,
-  description: string,
-  fullDescription: string,
-  technologies: arrayOf(string),
-  image: string,
+  title: string.isRequired,
+  date: string.isRequired,
+  description: string.isRequired,
+  fullDescription: string.isRequired,
+  technologies: arrayOf(string).isRequired,
+  image: string.isRequired,
   link: shape({
     text: string,
     path: string,
-  }),
+  }).isRequired,
 };
 
 export default Slide;

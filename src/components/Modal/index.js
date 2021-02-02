@@ -35,9 +35,9 @@ const Modal = ({ children, modalStatus, toggleModal }) => {
 };
 
 Modal.propTypes = {
-  children: node,
-  modalStatus: bool,
-  toggleModal: func,
+  children: node.isRequired,
+  modalStatus: bool.isRequired,
+  toggleModal: func.isRequired,
 };
 
 export default Modal;

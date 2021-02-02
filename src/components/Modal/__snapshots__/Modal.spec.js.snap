@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component renders correctly with props 1`] = `
+<CSSTransition
+  classNames={
+    Object {
+      "enter": "modalEnter",
+      "enterActive": "modalEnterActive",
+      "exitActive": "modalExitActive",
+    }
+  }
+  in={false}
+  timeout={500}
+  unmountOnExit={true}
+>
+  <div
+    className="modal"
+  >
+    <div
+      className="overlay"
+      onClick={[MockFunction]}
+    />
+    <div
+      className="content"
+    >
+      <button
+        className="button"
+        onClick={[MockFunction]}
+        type="button"
+      >
+        <img
+          alt="Close"
+          className="icon"
+          src="close.svg"
+        />
+      </button>
+      Content
+    </div>
+  </div>
+</CSSTransition>
+`;

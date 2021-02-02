@@ -19,7 +19,7 @@ describe("Burger component", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("simulates click event", () => {
+  it("simulates onClick event on onToggleStatus function", () => {
     wrapper.find("ul").simulate("click");
 
     expect(props.onToggleStatus).toHaveBeenCalled();

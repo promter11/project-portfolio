@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact page renders correctly with props 1`] = `
+<section
+  className="contact"
+>
+  <Container>
+    <Heading
+      className="title"
+      level={1}
+    >
+      Контакты
+    </Heading>
+    <div
+      className="content"
+    >
+      <Heading
+        className="contentTitle"
+        level={2}
+      >
+        Давайте оставаться на связи
+      </Heading>
+      <div
+        className="wrapper"
+      >
+        <div
+          className="block blue"
+        >
+          <Heading
+            className="blockTitle"
+            level={3}
+          >
+            Контактные данные
+          </Heading>
+          <Info
+            items={
+              Array [
+                Object {
+                  "image": "pin.svg",
+                  "value": "Волгоград, Россия",
+                },
+                Object {
+                  "image": "phone-call.svg",
+                  "path": "tel:79370980594",
+                  "value": "+7 (937) 098-05-94",
+                },
+                Object {
+                  "image": "email.svg",
+                  "path": "mailto:promter11@gmail.com",
+                  "value": "promter11@gmail.com",
+                },
+              ]
+            }
+          />
+        </div>
+        <div
+          className="block"
+        >
+          <Heading
+            className="blockTitle black"
+            level={3}
+          >
+            Отправьте мне сообщение
+          </Heading>
+          <ContactForm
+            language="RU"
+          />
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
+`;

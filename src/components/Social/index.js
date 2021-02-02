@@ -23,7 +23,7 @@ Social.propTypes = {
       path: string,
       component: any,
     })
-  ),
+  ).isRequired,
 };
 
 export default Social;

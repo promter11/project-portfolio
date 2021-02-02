@@ -18,9 +18,9 @@ const User = ({ name, position, avatar }) => {
 };
 
 User.propTypes = {
-  name: string,
-  position: string,
-  avatar: string,
+  name: string.isRequired,
+  position: string.isRequired,
+  avatar: string.isRequired,
 };
 
 export default User;

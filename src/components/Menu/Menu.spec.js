@@ -5,8 +5,8 @@ import Menu from "./index";
 
 const props = {
   items: [
-    { title: "Home", path: "/", icon: "C:/Front/Link" },
-    { title: "About", path: "/about", icon: "C:/Front/Link/Icon" },
+    { title: "Home", path: "/", icon: "../icons/menu/1" },
+    { title: "About", path: "/about", icon: "../icons/menu/2" },
   ],
   onToggleStatus: jest.fn(),
 };
@@ -22,7 +22,7 @@ describe("Menu component", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("simulates onClick event", () => {
+  it("simulates onClick event on onToggleStatus function", () => {
     wrapper.find("NavLink").at(0).simulate("click");
 
     expect(props.onToggleStatus).toHaveBeenCalled();

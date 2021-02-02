@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About page renders correctly with props 1`] = `
+<section
+  className="about"
+>
+  <Container>
+    <Heading
+      className="title"
+      level={1}
+    >
+      Обо мне
+    </Heading>
+    <div
+      className="block"
+    >
+      <Heading
+        className="subtitle"
+        level={3}
+      >
+        Несколько слов обо мне...
+      </Heading>
+      <p
+        className="text"
+        key="0"
+      >
+        Я фронтенд-разработчик, занимающийся созданием пользовательских интерфейсов с использованием React.
+      </p>
+      <p
+        className="text"
+        key="1"
+      >
+        Я хорошо организован, мотивирован, ориентирован на работу в команде и постоянно работаю над улучшением своих профессиональных навыков. Уделяю внимание деталям, но без излишнего перфекционизма, когда это наносит ущерб скорости разработки.
+      </p>
+      <p
+        className="text"
+        key="2"
+      >
+        Заинтересован в работе над амбициозными проектами на актуальном стеке технологий с коллегами, имеющими большой опыт во front-end разработке, которым нравится делиться знаниями.
+      </p>
+      <a
+        className="link"
+        download={true}
+        href="../files/resume.pdf"
+      >
+        Скачать резюме
+      </a>
+    </div>
+  </Container>
+</section>
+`;

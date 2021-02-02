@@ -15,7 +15,7 @@ exports[`Menu component renders correctly with props 1`] = `
     <img
       alt="Home"
       className="icon"
-      src="C:/Front/Link"
+      src="../icons/menu/1"
     />
     <span
       className="text"
@@ -34,7 +34,7 @@ exports[`Menu component renders correctly with props 1`] = `
     <img
       alt="About"
       className="icon"
-      src="C:/Front/Link/Icon"
+      src="../icons/menu/2"
     />
     <span
       className="text"

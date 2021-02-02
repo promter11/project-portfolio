@@ -33,7 +33,7 @@ const Preloader = ({ loading }) => {
 };
 
 Preloader.propTypes = {
-  loading: bool,
+  loading: bool.isRequired,
 };
 
 export default Preloader;

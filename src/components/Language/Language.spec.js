@@ -8,16 +8,16 @@ const props = {
     toggle: false,
     defaultLanguage: {
       language: "RU",
-      icon: "C:/path",
+      icon: "../icons/flags/1",
     },
     languagesList: [
       {
         language: "RU",
-        icon: "C:/RussianFlag/Icon",
+        icon: "../icons/flags/1",
       },
       {
         language: "EN",
-        icon: "C:/UKFlag/Icon",
+        icon: "../icons/flags/2",
       },
     ],
   },

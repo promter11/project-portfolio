@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoMatch page renders correctly with props 1`] = `
+<section
+  className="noMatch"
+>
+  <Container>
+    <Heading
+      className="title"
+      level={1}
+    >
+      Страница не найдена
+    </Heading>
+    <p
+      className="text"
+    >
+      Страница, которую вы искали, не может быть найдена. Она могла быть удалена, переименована или вообще не существовать.
+    </p>
+    <Link
+      className="link"
+      to="/"
+    >
+      Главная страница
+    </Link>
+  </Container>
+</section>
+`;

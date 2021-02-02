@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel component renders correctly with items 1`] = `
+<Swiper
+  breakpoints={
+    Object {
+      "0": Object {
+        "slidesPerView": 1,
+      },
+      "1920": Object {
+        "slidesPerView": 3,
+      },
+      "440": Object {
+        "slidesPerView": 1.6,
+      },
+      "768": Object {
+        "slidesPerView": 2.4,
+      },
+    }
+  }
+  className="swiper"
+  navigation={
+    Object {
+      "nextEl": null,
+      "prevEl": null,
+    }
+  }
+  onInit={[Function]}
+  pagination={
+    Object {
+      "clickable": true,
+      "el": null,
+      "type": "fraction",
+    }
+  }
+  spaceBetween={40}
+>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="inner"
+    >
+      <div
+        className="count"
+      />
+    </div>
+    <div
+      className="inner"
+    >
+      <button
+        className="button"
+      >
+        <img
+          alt="Prev"
+          className="icon"
+          src="arrow-left.svg"
+        />
+      </button>
+      <button
+        className="button"
+      >
+        <img
+          alt="Next"
+          className="icon"
+          src="arrow-right.svg"
+        />
+      </button>
+    </div>
+  </div>
+  <SwiperSlide
+    className="slide"
+    key="0"
+  >
+    <Slide
+      date="December 24, 2000"
+      description="Short description"
+      fullDescription="Full description"
+      image="../images/1"
+      link={
+        Object {
+          "path": "/",
+          "text": "Learn more",
+        }
+      }
+      technologies={
+        Array [
+          "1",
+          "2",
+        ]
+      }
+      title="Title"
+    />
+  </SwiperSlide>
+  <SwiperSlide
+    className="slide"
+    key="1"
+  >
+    <Slide
+      date="October 12, 1995"
+      description="Short description"
+      fullDescription="Full description"
+      image="../images/2"
+      link={
+        Object {
+          "path": "/",
+          "text": "Learn more",
+        }
+      }
+      technologies={
+        Array [
+          "1",
+          "2",
+          "3",
+        ]
+      }
+      title="Title"
+    />
+  </SwiperSlide>
+</Swiper>
+`;

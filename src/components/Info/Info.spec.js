@@ -5,18 +5,18 @@ import Info from "./index";
 
 const items = [
   {
-    image: "C:/Development/Front",
+    image: "../images/info/1",
     value: "Test",
     path: "/path",
   },
   {
-    image: "C:/Development/Front/Other",
+    image: "../images/info/2",
     value: "Test 2",
     path: "/link",
   },
   {
-    image: "C:/Development/Front/NoLink",
-    value: "Test 2",
+    image: "../images/info/3",
+    value: "Test 3",
   },
 ];
 

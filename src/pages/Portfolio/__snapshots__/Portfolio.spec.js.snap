@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio page renders correctly with props 1`] = `
+<section
+  className="portfolio"
+>
+  <Container>
+    <Heading
+      className="title"
+      level={1}
+    >
+      Работы
+    </Heading>
+    <Carousel
+      slides={
+        Array [
+          Object {
+            "date": "24 декабря, 2020",
+            "description": "Приложение для заказа парфюмерии",
+            "fullDescription": "Приложение для заказа парфюмерии с помощью React + MobX с фильтрами, поиском, корзиной с оформлением заказа.",
+            "image": "Portfolio Item 1.jpg",
+            "link": Object {
+              "path": "/",
+              "text": "Подробнее",
+            },
+            "technologies": Array [
+              "HTML (JSX)",
+              "Styled Components",
+              "React JS (Class Components)",
+              "MobX",
+              "React Router",
+              "Webpack",
+            ],
+            "title": "Olivia",
+          },
+          Object {
+            "date": "12 августа, 2020",
+            "description": "SPA-приложение для скачивания обоев для рабочего стола",
+            "fullDescription": "SPA-приложение для загрузки обоев для рабочего стола с использованием библиотеки React на функциональных компонентах и хуках, с обращением к Pixabay API.",
+            "image": "Portfolio Item 2.jpg",
+            "link": Object {
+              "path": "/",
+              "text": "Подробнее",
+            },
+            "technologies": Array [
+              "HTML (JSX)",
+              "CSS Modules",
+              "Typescript",
+              "React (Hooks)",
+              "Redux + Thunk",
+              "React Router",
+              "Webpack",
+            ],
+            "title": "Passion",
+          },
+          Object {
+            "date": "06 мая, 2020",
+            "description": "Рекламный лендинг о мобильном приложении AppLab",
+            "fullDescription": "Рекламный Landing Page про мобильное приложение AppLab с простыми анимациями, bootstrap сеткой/компонентами и небольшой функциональностью на jQuery.",
+            "image": "Portfolio Item 3.jpg",
+            "link": Object {
+              "path": "/",
+              "text": "Подробнее",
+            },
+            "technologies": Array [
+              "HTML5",
+              "SCSS",
+              "jQuery",
+              "Bootstrap 4",
+              "Swiper Slider",
+              "AOS JS (Animations)",
+              "Gulp",
+            ],
+            "title": "AppLab",
+          },
+          Object {
+            "date": "14 апреля, 2020",
+            "description": "Адаптивный Landing Page на тему COVID-19",
+            "fullDescription": "Адаптивный Landing Page на тему COVID-19 с небольшой функциональностью в виде плавных переходов, слайдера, модального окна и т.д., а также актуальными данными о количестве зараженных по странам, полученные по обращению к ninja-api через fetch.",
+            "image": "Portfolio Item 4.jpg",
+            "link": Object {
+              "path": "/",
+              "text": "Подробнее",
+            },
+            "technologies": Array [
+              "PUG",
+              "SCSS",
+              "Vanilla JS",
+              "Gulp",
+            ],
+            "title": "COVID-19",
+          },
+        ]
+      }
+    />
+  </Container>
+</section>
+`;

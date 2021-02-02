@@ -88,7 +88,7 @@ Carousel.propTypes = {
         path: string,
       }),
     })
-  ),
+  ).isRequired,
 };
 
 export default Carousel;

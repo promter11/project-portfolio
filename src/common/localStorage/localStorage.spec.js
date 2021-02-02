@@ -1,27 +1,32 @@
 import { loadState, saveState } from "./index";
 
+const localStorageMock = (() => {
+  let store = {};
+
+  return {
+    getItem: (key) => store[key] || null,
+    setItem: (key, value) => (store[key] = value.toString()),
+  };
+})();
+
+Object.defineProperty(window, "localStorage", { value: localStorageMock });
+
 describe("localStorage", () => {
-  beforeAll(() => {
-    jest.spyOn(Storage.prototype, "getItem");
-    jest.spyOn(Storage.prototype, "setItem");
-  });
-
   describe("loadState function", () => {
-    it("check a loadState function returns undefined", () => {
-      loadState();
+    it("returns undefined", () => {
+      expect(loadState()).toBeUndefined();
+    });
 
-      expect(localStorage.getItem("state")).toBeUndefined();
+    it("returns serialized state", () => {
+      saveState({ id: 1 });
+
+      expect(loadState()).toStrictEqual({ id: 1 });
     });
   });
 
   describe("saveState function", () => {
-    it("check a saveState function works correctly", () => {
-      saveState({ id: 1 });
-
-      expect(localStorage.setItem).toHaveBeenCalledWith(
-        "state",
-        JSON.stringify({ id: 1 })
-      );
+    it("works correctly", () => {
+      expect(saveState({ id: 1 })).toBeUndefined();
     });
   });
 });

@@ -11,7 +11,7 @@ exports[`Info component renders correctly with items 1`] = `
     <img
       alt="Info"
       className="image"
-      src="C:/Development/Front"
+      src="../images/info/1"
     />
     <a
       className="text"
@@ -27,7 +27,7 @@ exports[`Info component renders correctly with items 1`] = `
     <img
       alt="Info"
       className="image"
-      src="C:/Development/Front/Other"
+      src="../images/info/2"
     />
     <a
       className="text"
@@ -43,12 +43,12 @@ exports[`Info component renders correctly with items 1`] = `
     <img
       alt="Info"
       className="image"
-      src="C:/Development/Front/NoLink"
+      src="../images/info/3"
     />
     <span
       className="text"
     >
-      Test 2
+      Test 3
     </span>
   </div>
 </div>

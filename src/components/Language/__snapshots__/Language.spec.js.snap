@@ -17,7 +17,7 @@ exports[`Language component renders correctly with props 1`] = `
         <img
           alt="RU"
           className="icon"
-          src="C:/path"
+          src="../icons/flags/1"
         />
       </div>
       <div
@@ -70,7 +70,7 @@ exports[`Language component renders correctly with props 1`] = `
         <img
           alt="RU"
           className="icon"
-          src="C:/RussianFlag/Icon"
+          src="../icons/flags/1"
         />
       </button>
       <button
@@ -82,7 +82,7 @@ exports[`Language component renders correctly with props 1`] = `
         <img
           alt="EN"
           className="icon"
-          src="C:/UKFlag/Icon"
+          src="../icons/flags/2"
         />
       </button>
     </div>

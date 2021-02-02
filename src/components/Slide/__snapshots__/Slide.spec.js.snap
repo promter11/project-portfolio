@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slide component renders correctly 1`] = `
+<div
+  className="slide"
+>
+  <div
+    className="header"
+  >
+    <span
+      className="date"
+    >
+      02 November, 1997
+    </span>
+    <img
+      alt="Preview"
+      className="image"
+      src="../images/1"
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <Heading
+      className="title"
+      level={2}
+    >
+      Title
+    </Heading>
+    <p
+      className="description"
+    >
+      Short description
+    </p>
+    <div
+      className="wrapper"
+    >
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        <ForwardRef(SvgInfo)
+          className="icon"
+        />
+      </button>
+    </div>
+  </div>
+  <Modal
+    modalStatus={false}
+    toggleModal={[Function]}
+  >
+    <div
+      className="modalWrapper"
+    >
+      <div
+        className="modalBlock"
+      >
+        <img
+          alt="Project"
+          className="modalImage"
+          src="../images/1"
+        />
+      </div>
+      <div
+        className="modalBlock"
+      >
+        <Heading
+          className="modalTitle"
+          level={3}
+        >
+          Title
+        </Heading>
+        <p
+          className="modalDesc"
+        >
+          Full description
+        </p>
+        <ul
+          className="modalList"
+        >
+          <li
+            className="modalListItem"
+            key="0"
+          >
+            1
+          </li>
+          <li
+            className="modalListItem"
+            key="1"
+          >
+            2
+          </li>
+        </ul>
+        <a
+          className="modalLink"
+          href="/"
+        >
+          Link
+        </a>
+      </div>
+    </div>
+  </Modal>
+</div>
+`;

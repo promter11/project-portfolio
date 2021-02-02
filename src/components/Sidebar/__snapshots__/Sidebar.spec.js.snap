@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar component renders correctly with props 1`] = `
+<CSSTransition
+  classNames={
+    Object {
+      "enter": "sidebarEnter",
+      "enterActive": "sidebarEnterActive",
+      "enterDone": "sidebarEnterDone",
+      "exit": "sidebarExit",
+      "exitActive": "sidebarExitActive",
+      "exitDone": "sidebarExitDone",
+    }
+  }
+  in={false}
+  timeout={0}
+>
+  <aside
+    className="sidebar"
+  >
+    <Burger
+      onToggleStatus={[MockFunction]}
+      status={false}
+    />
+    <User
+      avatar="Avatar.jpg"
+      name="Александр Самылин"
+      position="Фронтенд-разработчик"
+    />
+    <Menu
+      items={
+        Array [
+          Object {
+            "icon": "home.svg",
+            "path": "/",
+            "title": "Домой",
+          },
+          Object {
+            "icon": "about.svg",
+            "path": "/about",
+            "title": "Обо мне",
+          },
+          Object {
+            "icon": "skills.svg",
+            "path": "/skills",
+            "title": "Навыки",
+          },
+          Object {
+            "icon": "portfolio.svg",
+            "path": "/portfolio",
+            "title": "Портфолио",
+          },
+          Object {
+            "icon": "contact.svg",
+            "path": "/contact",
+            "title": "Контакты",
+          },
+        ]
+      }
+      onToggleStatus={[MockFunction]}
+    />
+    <div
+      className="wrapper"
+    >
+      <Connect(Language) />
+      <Social
+        socials={
+          Array [
+            Object {
+              "component": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "path": "https://t.me/darklurkerrr",
+            },
+            Object {
+              "component": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "path": "https://github.com/promter11",
+            },
+            Object {
+              "component": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "path": "mailto:promter11@gmail.com",
+            },
+          ]
+        }
+      />
+    </div>
+  </aside>
+</CSSTransition>
+`;

@@ -49,10 +49,10 @@ Sidebar.propTypes = {
   state: shape({
     sidebarStatus: bool,
     language: string,
-  }),
+  }).isRequired,
   actions: shape({
     toggleStatus: func,
-  }),
+  }).isRequired,
 };
 
 export default Sidebar;

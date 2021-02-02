@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page renders correctly with props 1`] = `
+<section
+  className="home"
+>
+  <Container>
+    <Heading
+      className="title"
+      level={1}
+    >
+      Привет, я Александр.
+    </Heading>
+    <p
+      className="desc"
+    >
+      Фронтенд-разработчик, который любит работать с React.
+    </p>
+    <Link
+      className="link"
+      to="/about"
+    >
+      Узнать больше
+    </Link>
+  </Container>
+</section>
+`;

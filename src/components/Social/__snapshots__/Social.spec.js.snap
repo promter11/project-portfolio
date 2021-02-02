@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Social component renders correctly with items 1`] = `
+<div
+  className="social"
+>
+  <a
+    className="link"
+    href="https://link.com"
+    key="0"
+  >
+    <ForwardRef(SvgTelegram)
+      className="icon"
+    />
+  </a>
+  <a
+    className="link"
+    href="https://path.ru"
+    key="1"
+  >
+    <ForwardRef(SvgTelegram)
+      className="icon"
+    />
+  </a>
+  <a
+    className="link"
+    href="mailto:example@gmail.com"
+    key="2"
+  >
+    <ForwardRef(SvgTelegram)
+      className="icon"
+    />
+  </a>
+</div>
+`;

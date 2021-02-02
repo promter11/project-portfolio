@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preloader component renders correctly with props 1`] = `
+<CSSTransition
+  classNames={
+    Object {
+      "enter": "enter",
+      "enterActive": "enterActive",
+      "exit": "exit",
+      "exitActive": "exitActive",
+    }
+  }
+  in={true}
+  timeout={1000}
+  unmountOnExit={true}
+>
+  <div
+    className="preloader"
+  >
+    <div
+      className="block"
+    >
+      <span
+        className="letter"
+        key="0"
+      >
+        L
+      </span>
+      <span
+        className="letter"
+        key="1"
+      >
+        O
+      </span>
+      <span
+        className="letter"
+        key="2"
+      >
+        A
+      </span>
+      <span
+        className="letter"
+        key="3"
+      >
+        D
+      </span>
+      <span
+        className="letter"
+        key="4"
+      >
+        I
+      </span>
+      <span
+        className="letter"
+        key="5"
+      >
+        N
+      </span>
+      <span
+        className="letter"
+        key="6"
+      >
+        G
+      </span>
+    </div>
+  </div>
+</CSSTransition>
+`;
