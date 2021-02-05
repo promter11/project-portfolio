@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Language container should renders correctly with props 1`] = `
+<Language
+  actions={
+    Object {
+      "setLanguage": [Function],
+      "setToggle": [Function],
+    }
+  }
+  state={
+    Object {
+      "defaultLanguage": Object {
+        "icon": "russia.svg",
+        "language": "RU",
+      },
+      "languagesList": Array [
+        Object {
+          "icon": "russia.svg",
+          "language": "RU",
+        },
+        Object {
+          "icon": "uk.svg",
+          "language": "EN",
+        },
+      ],
+      "toggle": false,
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+/>
+`;
