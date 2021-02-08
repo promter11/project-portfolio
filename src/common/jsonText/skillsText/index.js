@@ -15,6 +15,9 @@ import Material from "../../../assets/icons/skills/material.svg";
 import NPM from "../../../assets/icons/skills/npm.svg";
 import Gulp from "../../../assets/icons/skills/gulp.svg";
 import Webpack from "../../../assets/icons/skills/webpack.svg";
+import Jest from "../../../assets/icons/skills/jest.svg";
+import Photoshop from "../../../assets/icons/skills/photoshop.svg";
+import Figma from "../../../assets/icons/skills/figma.svg";
 import Git from "../../../assets/icons/skills/git.svg";
 import MySQL from "../../../assets/icons/skills/mysql.svg";
 
@@ -141,11 +144,28 @@ export const skillsText = {
             text: "Сборщик модулей",
             image: Webpack,
           },
+          {
+            title: "Jest",
+            text:
+              "Фреймворк для тестирования JavaScript, ориентированный на простоту",
+            image: Jest,
+          },
         ],
       },
       {
         title: "Другое",
         items: [
+          {
+            title: "Photoshop",
+            text: "Многофункциональный графический редактор",
+            image: Photoshop,
+          },
+          {
+            title: "Figma",
+            text:
+              "Редактор векторной графики и инструмент для прототипирования",
+            image: Figma,
+          },
           {
             title: "Git",
             text:
@@ -282,11 +302,27 @@ export const skillsText = {
             text: "A module bundler",
             image: Webpack,
           },
+          {
+            title: "Jest",
+            text:
+              "A delightful JavaScript Testing Framework with a focus on simplicity",
+            image: Jest,
+          },
         ],
       },
       {
         title: "Other",
         items: [
+          {
+            title: "Photoshop",
+            text: "A raster graphic editor",
+            image: Photoshop,
+          },
+          {
+            title: "Figma",
+            text: "A vector graphic editor and phototype tool",
+            image: Figma,
+          },
           {
             title: "Git",
             text: "A free and open source distributed version control system",

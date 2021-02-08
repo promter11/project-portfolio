@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm component renders correctly 1`] = `
+<Fragment>
+  <ReactFinalForm
+    onSubmit={[Function]}
+    render={[Function]}
+  />
+  <Modal
+    modalStatus={false}
+    toggleModal={[Function]}
+  >
+    <div
+      className="modalInner"
+    >
+      <Heading
+        className="modalTitle"
+        level={2}
+      >
+        Спасибо!
+      </Heading>
+      <p
+        className="modalDesc"
+      >
+        Ваше сообщение успешно отправлено.
+      </p>
+    </div>
+  </Modal>
+</Fragment>
+`;
