@@ -444,6 +444,27 @@ exports[`Skills page renders correctly with props 1`] = `
               Сборщик модулей
             </p>
           </div>
+          <div
+            className="block"
+            key="3"
+          >
+            <img
+              alt="Jest"
+              className="image"
+              src="jest.svg"
+            />
+            <Heading
+              className="blockTitle"
+              level={3}
+            >
+              Jest
+            </Heading>
+            <p
+              className="text"
+            >
+              Фреймворк для тестирования JavaScript, ориентированный на простоту
+            </p>
+          </div>
         </div>
       </div>
       <div
@@ -464,6 +485,48 @@ exports[`Skills page renders correctly with props 1`] = `
             key="0"
           >
             <img
+              alt="Photoshop"
+              className="image"
+              src="photoshop.svg"
+            />
+            <Heading
+              className="blockTitle"
+              level={3}
+            >
+              Photoshop
+            </Heading>
+            <p
+              className="text"
+            >
+              Многофункциональный графический редактор
+            </p>
+          </div>
+          <div
+            className="block"
+            key="1"
+          >
+            <img
+              alt="Figma"
+              className="image"
+              src="figma.svg"
+            />
+            <Heading
+              className="blockTitle"
+              level={3}
+            >
+              Figma
+            </Heading>
+            <p
+              className="text"
+            >
+              Редактор векторной графики и инструмент для прототипирования
+            </p>
+          </div>
+          <div
+            className="block"
+            key="2"
+          >
+            <img
               alt="Git"
               className="image"
               src="git.svg"
@@ -482,7 +545,7 @@ exports[`Skills page renders correctly with props 1`] = `
           </div>
           <div
             className="block"
-            key="1"
+            key="3"
           >
             <img
               alt="MySQL"

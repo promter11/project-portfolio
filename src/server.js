@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const main = require("./nodemailer");
+const mailer = require("./nodemailer");
 
 const app = express();
 
@@ -11,25 +11,23 @@ app.post("/send", (req, res) => {
   const { name, email, message } = req.body;
 
   const info = {
-    from: process.env.EMAIL_USER,
+    from: `"Portfolio Mailer" <${process.env.EMAIL_USER}>`,
     to: process.env.EMAIL_SEND_TO,
     subject: "Форма на сайте-портфолио",
     html: `
       <div>
-        <p>Доставлено новое сообщение из формы на сайте.</p>
-        <hr />
-        <p>Контактная информация:</p>
+        <h3>Доставлено новое сообщение из формы на сайте.</h3>
+        <br />
         <p><b>Имя:</b> ${name}</p>
         <p><b>Электронная почта:</b> ${email}</p>
-        <br />
-        <p>${message}</p>
+        <p><b>Сообщение:</b> ${message}</p>
       </div>
     `,
   };
 
-  main(info).catch(console.error);
+  mailer(info).catch(console.error);
 });
 
 app.listen(process.env.SERVER_PORT, () => {
-  console.log(`App listening on ${process.env.SERVER_PORT} port.`);
+  console.log(`Server listening on ${process.env.SERVER_PORT} port.`);
 });

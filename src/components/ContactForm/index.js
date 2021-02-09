@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { string } from "prop-types";
-import axios from "axios";
 import { Form, Field } from "react-final-form";
+import axios from "axios";
 
 import Heading from "../Heading";
 import Modal from "../Modal";
@@ -29,7 +29,7 @@ const ContactForm = ({ language }) => {
       : contactText[language].blocks.right.form.errors.checkEmail;
 
   const onSubmit = (values) => {
-    // axios.post("/send/", values);
+    axios.post("/send", values);
 
     setModalStatus((value) => !value);
   };

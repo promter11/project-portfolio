@@ -27,7 +27,7 @@
     right: 0;
     bottom: 0;
     @include flex(nowrap, row, center, center);
-    animation: blur-text 2s infinite linear alternate;
+    animation: blur-text 1s infinite linear alternate;
 
     .letter {
       display: inline-block;
@@ -39,10 +39,10 @@
 
 @keyframes blur-text {
   0% {
-    filter: blur(0);
+    filter: blur(0.4rem);
   }
 
   100% {
-    filter: blur(0.4rem);
+    filter: blur(0);
   }
 }

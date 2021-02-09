@@ -5,7 +5,7 @@ import Heading from "./index";
 
 const props = {
   className: "k9Cds__Heading__1vt",
-  level: 2
+  level: 2,
 };
 
 describe("Heading component", () => {

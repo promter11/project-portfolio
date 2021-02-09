@@ -4,7 +4,7 @@ const path = require("path");
 
 dotenv.config({ path: path.join(__dirname + "/../") + ".env" });
 
-const main = async (info) => {
+const mailer = async (info) => {
   let transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
     port: process.env.EMAIL_PORT,
@@ -20,4 +20,4 @@ const main = async (info) => {
   console.log("Message sent: %s", send.messageId);
 };
 
-module.exports = main;
+module.exports = mailer;
