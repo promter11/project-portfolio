@@ -9,7 +9,7 @@ export const aboutText = {
     ],
     link: {
       text: "Скачать резюме",
-      path: "../files/resume.pdf",
+      path: "../src/assets/docs/resume.pdf",
     },
   },
   EN: {
@@ -22,7 +22,7 @@ export const aboutText = {
     ],
     link: {
       text: "Download resume",
-      path: "../files/resume.pdf",
+      path: "../src/assets/docs/resume.pdf",
     },
   },
 };

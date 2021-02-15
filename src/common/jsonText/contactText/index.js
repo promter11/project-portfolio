@@ -12,7 +12,7 @@ export const contactText = {
         items: [
           {
             image: Pin,
-            value: "Волгоград, Россия",
+            value: "Москва, Россия",
           },
           {
             image: Phone,
@@ -55,7 +55,7 @@ export const contactText = {
         items: [
           {
             image: Pin,
-            value: "Volgograd, Russia",
+            value: "Moscow, Russia",
           },
           {
             image: Phone,

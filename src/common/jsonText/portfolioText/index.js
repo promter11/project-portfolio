@@ -24,7 +24,7 @@ export const portfolioText = {
         image: Olivia,
         link: {
           text: "Подробнее",
-          path: "/",
+          path: "https://project-olivia.vercel.app",
         },
       },
       {
@@ -45,7 +45,7 @@ export const portfolioText = {
         image: Passion,
         link: {
           text: "Подробнее",
-          path: "/",
+          path: "https://project-passion.vercel.app",
         },
       },
       {
@@ -66,7 +66,7 @@ export const portfolioText = {
         image: AppLab,
         link: {
           text: "Подробнее",
-          path: "/",
+          path: "https://project-applab.vercel.app",
         },
       },
       {
@@ -79,7 +79,7 @@ export const portfolioText = {
         image: Covid,
         link: {
           text: "Подробнее",
-          path: "/",
+          path: "https://project-covid.vercel.app",
         },
       },
     ],
@@ -104,7 +104,7 @@ export const portfolioText = {
         image: Olivia,
         link: {
           text: "See more",
-          path: "/",
+          path: "https://project-olivia.vercel.app",
         },
       },
       {
@@ -125,7 +125,7 @@ export const portfolioText = {
         image: Passion,
         link: {
           text: "See more",
-          path: "/",
+          path: "https://project-passion.vercel.app",
         },
       },
       {
@@ -146,7 +146,7 @@ export const portfolioText = {
         image: AppLab,
         link: {
           text: "See more",
-          path: "/",
+          path: "https://project-applab.vercel.app",
         },
       },
       {
@@ -159,7 +159,7 @@ export const portfolioText = {
         image: Covid,
         link: {
           text: "See more",
-          path: "/",
+          path: "https://project-covid.vercel.app",
         },
       },
     ],
