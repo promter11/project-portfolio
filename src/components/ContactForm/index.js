@@ -29,7 +29,8 @@ const ContactForm = ({ language }) => {
       : contactText[language].blocks.right.form.errors.checkEmail;
 
   const onSubmit = (values) => {
-    axios.post("/send", values);
+    // It's need to correctly build express
+    // axios.post("/send", values);
 
     setModalStatus((value) => !value);
   };

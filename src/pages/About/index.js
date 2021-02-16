@@ -5,7 +5,7 @@ import Container from "../../components/Container";
 
 import { aboutText } from "../../common/jsonText/aboutText";
 
-import Resume from "../../assets/docs/resume.pdf";
+import Resume from "../../assets/docs/Resume.pdf";
 import styles from "./About.module.scss";
 
 const About = ({ language }) => {
