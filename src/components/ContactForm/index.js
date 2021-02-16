@@ -28,9 +28,11 @@ const ContactForm = ({ language }) => {
       ? undefined
       : contactText[language].blocks.right.form.errors.checkEmail;
 
-  const onSubmit = (values) => {
+  const onSubmit = (values, form) => {
     // It's need to correctly build express
     // axios.post("/send", values);
+
+    setTimeout(form.restart);
 
     setModalStatus((value) => !value);
   };
@@ -39,16 +41,11 @@ const ContactForm = ({ language }) => {
     <Fragment>
       <Form
         onSubmit={onSubmit}
-        render={({ handleSubmit, form, submitting, values }) => (
+        render={({ handleSubmit, submitting }) => (
           <form
             className={styles.form}
             onSubmit={async (event) => {
               await handleSubmit(event);
-
-              form.reset();
-              Object.keys(values).forEach((field) =>
-                form.resetFieldState(field)
-              );
             }}
           >
             <Field name="name" validate={required}>
