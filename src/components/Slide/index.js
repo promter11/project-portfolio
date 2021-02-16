@@ -61,7 +61,12 @@ const Slide = ({
                 );
               })}
             </ul>
-            <a className={modalStyles.modalLink} href={path} target="_blank">
+            <a
+              className={modalStyles.modalLink}
+              href={path}
+              target="_blank"
+              rel="noreferrer"
+            >
               {text}
             </a>
           </div>
