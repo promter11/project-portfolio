@@ -5,7 +5,7 @@ import Container from "../../components/Container";
 
 import { aboutText } from "../../common/jsonText/aboutText";
 
-import Resume from "../../assets/docs/Resume.pdf";
+import Resume from "../../assets/docs/ResumePDF.pdf";
 import styles from "./About.module.scss";
 
 const About = ({ language }) => {
@@ -26,7 +26,12 @@ const About = ({ language }) => {
               </p>
             );
           })}
-          <a className={styles.link} href={Resume} download>
+          <a
+            className={styles.link}
+            href={Resume}
+            target="_blank"
+            rel="noreferrer"
+          >
             {aboutText[language].link.text}
           </a>
         </div>
